@@ -1,0 +1,37 @@
+name: CI
+
+# Gate de los pull requests: corre la suite de tests offline en cada PR contra
+# main (el flujo del repo es "1 fuente por PR"). NO ejecuta el pipeline real ni
+# el --probe: eso vive en daily.yml (schedule/dispatch) y necesita secrets +
+# red. Aquí solo tests offline, que es lo que hay en tests/.
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+# Si se empujan varios commits seguidos a un PR/rama, cancela la corrida previa.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        # Instala vigia-core@vX.Y.Z (git+pip, vía requirements.txt) + pytest.
+        # De paso valida que el pin de vigia-core resuelve (lo mismo que daily.yml).
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar tests
+        run: python -m pytest tests/ -v --tb=short
