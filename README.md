@@ -15,6 +15,9 @@ y sus fuentes propias (BOCM y ProfesoresdeELE).
   (AECID/MEFP/Fulbright/Cervantes), colegios privados/concertados del noroeste.
 - **Excluye** a propósito: primaria (Cuerpo 0597), universidad/PDI general
   (solo universidad en contexto ELE), roles 100% en inglés.
+- **Ámbito geográfico**: la secundaria pública (oposiciones/bolsas/traslados) y los
+  colegios privados se ciñen a Madrid; las vacantes **ELE** y los **lectorados/
+  auxiliares** son relevantes en cualquier ubicación (España o extranjero).
 
 ## Arquitectura
 ```
@@ -31,6 +34,7 @@ python -m vigia_docencia --probe    # salud de las fuentes
 ```
 
 ## Tests / validación offline
+En cada PR a `main`, [`ci.yml`](.github/workflows/ci.yml) corre estos tests automáticamente.
 ```bash
 # Con vigia-core instalado por pip:
 python -m pytest tests
