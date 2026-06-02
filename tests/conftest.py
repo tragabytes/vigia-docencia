@@ -8,7 +8,7 @@ que los tests se ejecuten contra el perfil docente y no contra el default
 
 Para la validación offline local (sin `pip install vigia-core`), añade el repo
 del core al PYTHONPATH al invocar:
-    PYTHONPATH=../alerta-empleo python -m pytest tests
+    PYTHONPATH=../vigia-core python -m pytest tests
 En CI, vigia-core está pip-instalado y el PYTHONPATH no hace falta.
 """
 from vigia.profile import set_active_profile

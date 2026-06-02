@@ -26,7 +26,9 @@ fuentes propias.
   keywords/patrones, respétalo.
 - **Fuentes:** `boe` (del core, **parametrizado** por `source_params`) + `bocm`
   (**custom** RSS en `vigia_docencia/sources/bocm.py`, registrada en
-  `extra_sources={"bocm": ...}` — sobrescribe el BOCM del core).
+  `extra_sources` — sobrescribe el BOCM del core) + `profesoresdeele` (feed RSS
+  de ofertas ELE, `vigia_docencia/sources/profesoresdeele.py`, categoría `ele`;
+  usa el `text` desde los tags del feed, no el excerpt — ver su docstring).
 
 ## Dónde va cada fuente nueva (ROADMAP)
 
@@ -63,7 +65,7 @@ y **bumpea** la línea `vigia-core @ …@vX.Y.Z` de `requirements.txt`. Verifica
 
 ```bash
 python -m pytest tests                              # con vigia-core instalado por pip
-PYTHONPATH=../alerta-empleo python -m pytest tests  # en local apuntando al core hermano
+PYTHONPATH=../vigia-core python -m pytest tests     # en local apuntando al core hermano
 ```
 
 ## Secrets / entorno (CI)
