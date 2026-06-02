@@ -53,6 +53,14 @@ CCAA) van **al core** (`vigia-core`).
 `INFOJOBS_CLIENT_ID`, `INFOJOBS_CLIENT_SECRET`, `JOOBLE_API_KEY`,
 `TELEGRAM_API_ID`, `TELEGRAM_API_HASH` (Telethon).
 
+## Mantenimiento
+- **Deprecación de Node 20 (GitHub Actions).** `daily.yml`, `test-telegram.yml` y
+  `ci.yml` usan `actions/checkout@v4` y `actions/setup-python@v5`, que corren sobre
+  Node 20. GitHub fuerza Node 24 por defecto desde el **16-jun-2026** y retira Node 20
+  el **16-sep-2026**. Antes de esa fecha: subir las versiones de las actions (o, como
+  parche temporal, `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true`). No urgente; afecta por
+  igual a los tres workflows.
+
 ---
 > Detalle histórico completo (sprints 1-9 con cadencias L1-L4): en `plan_profe.md`
 > del repo archivado `tragabytes/alerta-empleo-profe` (read-only, consultable).
