@@ -1,0 +1,23 @@
+name: test telegram
+
+# Disparo manual: envía el test_message del perfil al chat configurado para
+# verificar el token/chat y el notifier del core. No toca la BD ni las fuentes.
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Enviar mensaje de prueba
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python -c "from vigia.profile import set_active_profile; from vigia_docencia.profile import PERFIL_DOCENCIA; set_active_profile(PERFIL_DOCENCIA); from vigia.notifier import send_test; send_test()"
