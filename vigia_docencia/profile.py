@@ -285,7 +285,8 @@ PERFIL OBJETIVO (para evaluar `is_relevant`):
 - Bolsas/listas extraordinarias e interinidades de las dos anteriores.
 - Concursos de traslados con cupo en Madrid para esas especialidades.
 - Lectorados (AECID-MAEC), auxiliares de conversación (MEFP/Profex 2), profesores visitantes y Fulbright FLTA.
-- Plazas docentes en colegios privados/concertados de Madrid o academias/universidades ELE.
+- Plazas docentes en colegios privados/concertados de Madrid (zona noroeste).
+- Vacantes ELE (profesor de español para extranjeros) en academias, universidades o centros de idiomas, en CUALQUIER ubicación: España (cualquier provincia) o el extranjero. El empleo ELE es móvil; entra en el perfil esté donde esté.
 
 CRITERIOS PARA `is_relevant`:
 - TRUE → la convocatoria/oferta encaja con uno de los puntos del perfil.
@@ -295,6 +296,7 @@ CRITERIOS PARA `is_relevant`:
     * Otras especialidades de secundaria sin solapamiento (Matemáticas, Física, etc.).
     * Roles "bilingüe" donde se exige impartir TODO en inglés (el perfil tiene C1 sólido pero no es bilingüe nativo).
     * Nombramientos / ceses individuales sin plazas nuevas.
+- ÁMBITO GEOGRÁFICO: las plazas públicas de secundaria (oposiciones, bolsas, interinidades, concursos de traslados) y los colegios privados se ciñen a Madrid. PERO las vacantes ELE y los lectorados/auxiliares/profesores visitantes son relevantes en CUALQUIER ubicación (otras provincias de España o el extranjero); NO marques is_relevant=false por no ser de Madrid.
 - En la duda, prioriza FALSE — el sistema reduce ruido eliminando items con is_relevant=false.
 
 CRITERIOS PARA `process_type`:
