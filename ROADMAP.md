@@ -1,9 +1,10 @@
 # Roadmap — vigia-docencia
 
-**Estado: MVP (Sprint 1) en producción.** Vigila **BOE + BOCM** → oposiciones e
-interinidad oficial de secundaria (Cuerpo 0590, especialidad 005 Geografía e
-Historia) + ELE/EOI (0592). Según el informe de perfil, esto cubre el grueso del
-empleo público docente.
+**Estado: MVP + 1ª ampliación, en producción.** Vigila **BOE + BOCM** →
+oposiciones e interinidad oficial de secundaria (Cuerpo 0590, especialidad 005
+Geografía e Historia) + ELE/EOI (0592), y **ProfesoresdeELE** → ofertas ELE
+(categoría `ele`). Según el informe de perfil, esto cubre el grueso del empleo
+público docente.
 
 Lo que sigue es **expansión de fuentes**, incremental: **1 fuente por PR**.
 Heredado del roadmap del bot original `alerta-empleo-profe` (archivado), ahora
@@ -12,13 +13,21 @@ sobre la arquitectura limpia. Patrón: cada fuente nueva = una clase `Source` en
 [`bocm.py`](vigia_docencia/sources/bocm.py)); las genéricas (boletines de otras
 CCAA) van **al core** (`vigia-core`).
 
+## Hecho
+- ✅ **ProfesoresdeELE** (RSS WordPress) — feed de la categoría "Ofertas de
+  trabajo" (`/category/ofertas-de-trabajo/feed/`), categoría `ele`. El `text`
+  para el matching se compone de los **tags** del feed (no del excerpt), para no
+  disparar los FALSE_POSITIVE_PATTERNS del perfil pensados para boletines (p.ej.
+  "educación infantil", frecuente en colegios internacionales con ELE en el
+  extranjero). `vigia_docencia/sources/profesoresdeele.py`.
+
 ## Alta prioridad — privado + ELE (lo que más amplía el radar de tu hermano)
 - **Colegios privados/concertados del noroeste** (ATS): Inspired (`jobs.inspirededu.com`),
   SEK (Teamtailor), Brains (Factorial), Colegios RC / Highlands (SAP SuccessFactors,
   pausa 4-6 s entre requests). → categoría `privada`.
 - **Portales ELE**: Instituto Cervantes (sede + `hispanismo.cervantes.es`),
-  ProfesoresdeELE (RSS WordPress), TodoELE (HTML), Universidad Nebrija (la más
-  activa en ELE). → categoría `ele`.
+  TodoELE (HTML), Universidad Nebrija (la más activa en ELE). → categoría `ele`.
+  (ProfesoresdeELE ✅ hecho, ver arriba.)
 
 ## Media prioridad — tiempo real + agregadores
 - **Canales sindicales de Telegram** (Telethon/MTProto, o fallback HTML `t.me/s/{canal}`):

@@ -16,6 +16,7 @@ from __future__ import annotations
 
 from vigia.profile import Profile
 from vigia_docencia.sources.bocm import BOCMSource
+from vigia_docencia.sources.profesoresdeele import ProfesoresDeEleSource
 
 # ---------------------------------------------------------------------------
 # Matching — patrones (informe.md, regex maestro docente)
@@ -391,6 +392,8 @@ _ENRICHER_ALLOWED_FETCH_HOSTS = frozenset({
     # Instituto Cervantes
     "cervantes.es", "www.cervantes.es",
     "cervantes.sede.gob.es", "hispanismo.cervantes.es",
+    # Portales ELE (agregadores de ofertas)
+    "profesoresdeele.org", "www.profesoresdeele.org",
     # Ministerio de Educación, FP y Deportes
     "educacionfpydeportes.gob.es", "www.educacionfpydeportes.gob.es",
     "educacion.gob.es", "www.educacion.gob.es",
@@ -457,10 +460,14 @@ PERFIL_DOCENCIA = Profile(
     enricher_snippet_keywords_low=tuple(_ENRICHER_SNIPPET_KEYWORDS_LOW),
     enricher_allowed_fetch_hosts=_ENRICHER_ALLOWED_FETCH_HOSTS,
     diff_system_prompt=_DIFF_SYSTEM_PROMPT,
-    sources_enabled=("boe", "bocm"),
+    sources_enabled=("boe", "bocm", "profesoresdeele"),
     # El BOCM del fork es una reescritura RSS → fuente custom que sobrescribe la
     # del core (clave "bocm"). El BOE se reusa del core, parametrizado abajo.
-    extra_sources={"bocm": BOCMSource},
+    # profesoresdeele: feed RSS de ofertas ELE (categoría "Ofertas de trabajo").
+    extra_sources={
+        "bocm": BOCMSource,
+        "profesoresdeele": ProfesoresDeEleSource,
+    },
     source_params={
         "boe": {
             "dept_keywords": _BOE_DEPT_KEYWORDS,

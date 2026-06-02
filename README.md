@@ -7,7 +7,7 @@ solo lo específico de su perfil.
 
 Sustituye al prototipo `alerta-empleo-profe` (un *fork* monolítico del
 pipeline): aquí el core se comparte por `pip` y solo viven el `Profile` docente
-y la fuente BOCM propia.
+y sus fuentes propias (BOCM y ProfesoresdeELE).
 
 ## Alcance del perfil (informe.md)
 - **Incluye**: Cuerpo 0590 PES esp. **005 Geografía e Historia**, Cuerpo 0592
@@ -19,7 +19,7 @@ y la fuente BOCM propia.
 ## Arquitectura
 ```
 vigia-core (pip)  →  Profile docente (vigia_docencia/profile.py)
-sources: boe (del core, parametrizado) + bocm (custom RSS, vigia_docencia/sources/bocm.py)
+sources: boe (del core, parametrizado) + bocm (custom RSS) + profesoresdeele (RSS ofertas ELE)
 pipeline: fetch → extract → enrich (opcional) → notify (Telegram) → dashboard
 ```
 
@@ -35,7 +35,7 @@ python -m vigia_docencia --probe    # salud de las fuentes
 # Con vigia-core instalado por pip:
 python -m pytest tests
 # En local sin instalar (apuntando al core del repo hermano):
-PYTHONPATH=../alerta-empleo python -m pytest tests
+PYTHONPATH=../vigia-core python -m pytest tests
 ```
 
 ## Variables de entorno
