@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+# El estado persistido vive en la rama `state`, no en main
+state/seen.db
+# El dashboard generado se publica en gh-pages
+docs/data/
