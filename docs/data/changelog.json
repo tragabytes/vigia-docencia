@@ -1,0 +1,10 @@
+[
+  {
+    "date": "2026-06-02",
+    "commit": "d7f6df8",
+    "kind": "feat",
+    "scope": "ci,web",
+    "title": "daily.yml + dashboard docente (E7)",
+    "body": "- .github/workflows/daily.yml: adaptado del fork. Corre `python -m vigia_docencia`"
+  }
+]
