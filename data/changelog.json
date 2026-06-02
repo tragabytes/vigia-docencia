@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-06-02",
+    "commit": "871c67e",
+    "kind": "ci",
+    "scope": "",
+    "title": "workflow test-telegram (ping manual de Telegram)",
+    "body": ""
+  },
+  {
+    "date": "2026-06-02",
     "commit": "d7f6df8",
     "kind": "feat",
     "scope": "ci,web",

@@ -3,25 +3,30 @@
     "id": "T-01",
     "name": "Consejería de Educación CM",
     "desc": "Comunidad de Madrid — Consejería de Educación, Ciencia y Universidades",
-    "hits": 0,
-    "active": false,
+    "hits": 2,
+    "active": true,
     "nearest_deadline": null,
     "days_until": null,
     "urgent": false,
-    "latest_phase": null,
-    "item_ids": []
+    "latest_phase": "convocatoria",
+    "item_ids": [
+      "e473d71ab78a71e4",
+      "bd142fa527600138"
+    ]
   },
   {
     "id": "T-02",
     "name": "Ministerio de Educación",
     "desc": "Ministerio de Educación, Formación Profesional y Deportes (MEFD)",
-    "hits": 0,
-    "active": false,
-    "nearest_deadline": null,
-    "days_until": null,
+    "hits": 1,
+    "active": true,
+    "nearest_deadline": "2026-06-30",
+    "days_until": 28,
     "urgent": false,
-    "latest_phase": null,
-    "item_ids": []
+    "latest_phase": "convocatoria",
+    "item_ids": [
+      "2f41268b400189b1"
+    ]
   },
   {
     "id": "T-03",
@@ -51,13 +56,15 @@
     "id": "T-05",
     "name": "MEFP Auxiliares",
     "desc": "Profex 2 — auxiliares de conversación en el extranjero",
-    "hits": 0,
-    "active": false,
-    "nearest_deadline": null,
-    "days_until": null,
+    "hits": 1,
+    "active": true,
+    "nearest_deadline": "2026-06-30",
+    "days_until": 28,
     "urgent": false,
-    "latest_phase": null,
-    "item_ids": []
+    "latest_phase": "convocatoria",
+    "item_ids": [
+      "2f41268b400189b1"
+    ]
   },
   {
     "id": "T-06",
@@ -75,13 +82,16 @@
     "id": "T-07",
     "name": "EOI Madrid",
     "desc": "Escuelas Oficiales de Idiomas (especialidad 008)",
-    "hits": 0,
-    "active": false,
+    "hits": 2,
+    "active": true,
     "nearest_deadline": null,
     "days_until": null,
     "urgent": false,
-    "latest_phase": null,
-    "item_ids": []
+    "latest_phase": "convocatoria",
+    "item_ids": [
+      "e473d71ab78a71e4",
+      "bd142fa527600138"
+    ]
   },
   {
     "id": "T-08",
