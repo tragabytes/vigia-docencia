@@ -1,18 +1,34 @@
 [
   {
     "date": "2026-06-02",
+    "commit": "4ff2e19",
+    "kind": "feat",
+    "scope": "fuente",
+    "title": "ProfesoresdeELE — ofertas ELE vía RSS de categoría (#2)",
+    "body": "Primera fuente de la fase de ampliación (ROADMAP, 1 fuente/PR). Añade el feed"
+  },
+  {
+    "date": "2026-06-02",
+    "commit": "4ee6740",
+    "kind": "ci",
+    "scope": "",
+    "title": "workflow que corre los tests en cada PR contra main (#3)",
+    "body": "daily.yml y test-telegram.yml solo disparan en schedule/workflow_dispatch, así"
+  },
+  {
+    "date": "2026-06-02",
+    "commit": "4bb9cca",
+    "kind": "ci",
+    "scope": "",
+    "title": "no publicar __pycache__ en gh-pages (limpieza antes de git add -A)",
+    "body": "Mismo fix que vigia-enfermeria: el checkout a gh-pages arrastra caches de Python; se eliminan antes del git add -A."
+  },
+  {
+    "date": "2026-06-02",
     "commit": "871c67e",
     "kind": "ci",
     "scope": "",
     "title": "workflow test-telegram (ping manual de Telegram)",
     "body": ""
-  },
-  {
-    "date": "2026-06-02",
-    "commit": "d7f6df8",
-    "kind": "feat",
-    "scope": "ci,web",
-    "title": "daily.yml + dashboard docente (E7)",
-    "body": "- .github/workflows/daily.yml: adaptado del fork. Corre `python -m vigia_docencia`"
   }
 ]

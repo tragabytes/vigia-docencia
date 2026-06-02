@@ -18,14 +18,15 @@
     "id": "T-02",
     "name": "Ministerio de Educación",
     "desc": "Ministerio de Educación, Formación Profesional y Deportes (MEFD)",
-    "hits": 1,
+    "hits": 2,
     "active": true,
     "nearest_deadline": "2026-06-30",
     "days_until": 28,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
-      "2f41268b400189b1"
+      "2f41268b400189b1",
+      "5df72b4108ec6a17"
     ]
   },
   {
