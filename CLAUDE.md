@@ -22,8 +22,11 @@ fuentes propias.
 - **Perfil** (`vigia_docencia/profile.py`): Cuerpo **0590 / esp. 005 Geografía e
   Historia** + **0592 EOI / ELE**, bolsas/interinidades, traslados, lectorados.
   **Excluye a propósito** primaria (0597), PDI/universidad general (solo universidad en
-  contexto ELE) y roles 100% en inglés. Alcance fijado por `informe.md`; al tocar
-  keywords/patrones, respétalo.
+  contexto ELE) y roles 100% en inglés. **Ámbito geográfico:** la secundaria pública
+  (oposiciones/bolsas/traslados) y los colegios privados se ciñen a **Madrid**; las
+  vacantes **ELE** y los **lectorados/auxiliares** son relevantes en **cualquier
+  ubicación** (España o extranjero). Alcance fijado por `informe.md`; al tocar
+  keywords/patrones/prompt del enricher, respétalo.
 - **Fuentes:** `boe` (del core, **parametrizado** por `source_params`) + `bocm`
   (**custom** RSS en `vigia_docencia/sources/bocm.py`, registrada en
   `extra_sources` — sobrescribe el BOCM del core) + `profesoresdeele` (feed RSS
@@ -62,6 +65,10 @@ parametrizar más una fuente compartida): hazlo en `vigia-core`, publica un **ta
 y **bumpea** la línea `vigia-core @ …@vX.Y.Z` de `requirements.txt`. Verifica el CI.
 
 ## Tests
+
+En cada **pull request** a `main`, [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
+instala `vigia-core` por pip y corre `pytest tests/` (gate automático; valida también que
+el pin de `vigia-core` resuelve). En local:
 
 ```bash
 python -m pytest tests                              # con vigia-core instalado por pip
