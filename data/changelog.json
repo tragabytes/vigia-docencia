@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-06-02",
+    "commit": "69c49d8",
+    "kind": "fix",
+    "scope": "enricher",
+    "title": "no geo-restringir a Madrid las ofertas ELE/lectorado (#4)",
+    "body": "El backfill real de ProfesoresdeELE destapó un falso negativo: el enricher marcó"
+  },
+  {
+    "date": "2026-06-02",
     "commit": "4ff2e19",
     "kind": "feat",
     "scope": "fuente",
@@ -22,13 +30,5 @@
     "scope": "",
     "title": "no publicar __pycache__ en gh-pages (limpieza antes de git add -A)",
     "body": "Mismo fix que vigia-enfermeria: el checkout a gh-pages arrastra caches de Python; se eliminan antes del git add -A."
-  },
-  {
-    "date": "2026-06-02",
-    "commit": "871c67e",
-    "kind": "ci",
-    "scope": "",
-    "title": "workflow test-telegram (ping manual de Telegram)",
-    "body": ""
   }
 ]
