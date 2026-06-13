@@ -13,7 +13,7 @@ fuentes propias.
 
 ## Lo esencial de este repo
 
-- **Consume `vigia-core@v0.4.2`** (`requirements.txt`). El pipeline
+- **Consume `vigia-core@v0.4.3`** (`requirements.txt`). El pipeline
   (fetch→extract→enrich→notify→dashboard) **no vive aquí**: vive en el core.
 - **Entrypoint:** `python -m vigia_docencia` (`vigia_docencia/__main__.py`). Fija el
   perfil docente con `set_active_profile(PERFIL_DOCENCIA)` **antes** de importar el
