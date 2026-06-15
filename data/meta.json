@@ -1,6 +1,6 @@
 {
   "total_items": 129,
-  "total_today": 5,
+  "total_today": 0,
   "total_relevant": 12,
   "total_irrelevant": 117,
   "total_enriched": 124,
@@ -13,15 +13,15 @@
     "oposicion": 24,
     "traslado": 26
   },
-  "days_watching": 46,
+  "days_watching": 49,
   "first_seen_at": "2026-04-26T19:28:50.171469",
-  "last_run_at": "2026-06-12T11:34:23.060541+00:00",
-  "next_run_at": "2026-06-15T08:00:00+00:00",
-  "sources_online": 3,
+  "last_run_at": "2026-06-15T13:46:44.776633+00:00",
+  "next_run_at": "2026-06-16T08:00:00+00:00",
+  "sources_online": 2,
   "sources_total": 3,
   "targets_active": 4,
   "targets_urgent": 0,
   "targets_total": 25,
   "version": "0.4.0",
-  "commit": "7309a81"
+  "commit": "098952f"
 }
