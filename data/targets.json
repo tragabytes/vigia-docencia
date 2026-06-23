@@ -6,7 +6,7 @@
     "hits": 4,
     "active": true,
     "nearest_deadline": "2026-09-15",
-    "days_until": 85,
+    "days_until": 84,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -23,8 +23,8 @@
     "hits": 2,
     "active": true,
     "nearest_deadline": "2026-06-30",
-    "days_until": 8,
-    "urgent": false,
+    "days_until": 7,
+    "urgent": true,
     "latest_phase": "convocatoria",
     "item_ids": [
       "2f41268b400189b1",
@@ -62,8 +62,8 @@
     "hits": 1,
     "active": true,
     "nearest_deadline": "2026-06-30",
-    "days_until": 8,
-    "urgent": false,
+    "days_until": 7,
+    "urgent": true,
     "latest_phase": "convocatoria",
     "item_ids": [
       "2f41268b400189b1"
@@ -88,7 +88,7 @@
     "hits": 3,
     "active": true,
     "nearest_deadline": "2026-09-15",
-    "days_until": 85,
+    "days_until": 84,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
