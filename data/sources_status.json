@@ -2,20 +2,20 @@
   {
     "name": "bocm",
     "url": "https://www.bocm.es/ultimo-boletin.xml",
-    "status": "error",
-    "code": null,
-    "detail": "HTTPSConnectionPool(host='www.bocm.es', port=443): Max retries exceeded with url: /ultimo-boletin.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.bocm.es', port=443) at 0x7f01943ff690>, 'Connection to www.bocm.es timed out. (connect timeout=10)'))",
-    "last_probe_at": "2026-06-23T10:53:41.955421+00:00",
-    "total_hits": 24
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-06-24T10:39:53.783270+00:00",
+    "total_hits": 25
   },
   {
     "name": "boe",
     "url": "https://boe.es/datosabiertos/",
-    "status": "error",
-    "code": null,
-    "detail": "HTTPSConnectionPool(host='boe.es', port=443): Max retries exceeded with url: /datosabiertos/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='boe.es', port=443) at 0x7f01943fd3d0>, 'Connection to boe.es timed out. (connect timeout=10)'))",
-    "last_probe_at": "2026-06-23T10:53:41.955421+00:00",
-    "total_hits": 121
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-06-24T10:39:53.783270+00:00",
+    "total_hits": 127
   },
   {
     "name": "profesoresdeele",
@@ -23,7 +23,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-06-23T10:53:41.955421+00:00",
+    "last_probe_at": "2026-06-24T10:39:53.783270+00:00",
     "total_hits": 3
   }
 ]
