@@ -5,25 +5,25 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-06-30T10:49:08.627702+00:00",
+    "last_probe_at": "2026-07-01T11:01:00.058206+00:00",
     "total_hits": 27
   },
   {
     "name": "boe",
     "url": "https://boe.es/datosabiertos/",
-    "status": "ok",
-    "code": 200,
-    "detail": "",
-    "last_probe_at": "2026-06-30T10:49:08.627702+00:00",
+    "status": "error",
+    "code": null,
+    "detail": "HTTPSConnectionPool(host='boe.es', port=443): Max retries exceeded with url: /datosabiertos/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='boe.es', port=443) at 0x7f07f4d36410>, 'Connection to boe.es timed out. (connect timeout=10)'))",
+    "last_probe_at": "2026-07-01T11:01:00.058206+00:00",
     "total_hits": 135
   },
   {
     "name": "profesoresdeele",
     "url": "https://profesoresdeele.org/category/ofertas-de-trabajo/feed/",
-    "status": "error",
-    "code": null,
-    "detail": "HTTPSConnectionPool(host='profesoresdeele.org', port=443): Read timed out. (read timeout=10)",
-    "last_probe_at": "2026-06-30T10:49:08.627702+00:00",
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-07-01T11:01:00.058206+00:00",
     "total_hits": 3
   }
 ]
