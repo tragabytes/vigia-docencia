@@ -1,6 +1,6 @@
 {
   "total_items": 188,
-  "total_today": 4,
+  "total_today": 0,
   "total_relevant": 13,
   "total_irrelevant": 175,
   "total_enriched": 183,
@@ -15,10 +15,10 @@
     "otro": 2,
     "traslado": 28
   },
-  "days_watching": 78,
+  "days_watching": 79,
   "first_seen_at": "2026-04-26T19:28:50.171469",
-  "last_run_at": "2026-07-14T09:43:58.775051+00:00",
-  "next_run_at": "2026-07-15T08:00:00+00:00",
+  "last_run_at": "2026-07-15T09:46:20.990553+00:00",
+  "next_run_at": "2026-07-16T08:00:00+00:00",
   "sources_online": 3,
   "sources_total": 3,
   "targets_active": 2,
