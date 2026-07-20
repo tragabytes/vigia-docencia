@@ -6,7 +6,7 @@
     "hits": 4,
     "active": true,
     "nearest_deadline": "2026-09-15",
-    "days_until": 60,
+    "days_until": 57,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -20,15 +20,16 @@
     "id": "T-02",
     "name": "Ministerio de Educación",
     "desc": "Ministerio de Educación, Formación Profesional y Deportes (MEFD)",
-    "hits": 2,
-    "active": false,
+    "hits": 3,
+    "active": true,
     "nearest_deadline": null,
     "days_until": null,
     "urgent": false,
-    "latest_phase": "convocatoria",
+    "latest_phase": "propuesta_nombramiento",
     "item_ids": [
       "2f41268b400189b1",
-      "5df72b4108ec6a17"
+      "5df72b4108ec6a17",
+      "78aeed9647197432"
     ]
   },
   {
@@ -88,7 +89,7 @@
     "hits": 3,
     "active": true,
     "nearest_deadline": "2026-09-15",
-    "days_until": 60,
+    "days_until": 57,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
