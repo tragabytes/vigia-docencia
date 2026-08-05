@@ -5,7 +5,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-08-04T10:24:26.698427+00:00",
+    "last_probe_at": "2026-08-05T10:20:29.045696+00:00",
     "total_hits": 38
   },
   {
@@ -14,8 +14,8 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-08-04T10:24:26.698427+00:00",
-    "total_hits": 183
+    "last_probe_at": "2026-08-05T10:20:29.045696+00:00",
+    "total_hits": 184
   },
   {
     "name": "profesoresdeele",
@@ -23,7 +23,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-08-04T10:24:26.698427+00:00",
+    "last_probe_at": "2026-08-05T10:20:29.045696+00:00",
     "total_hits": 5
   }
 ]
