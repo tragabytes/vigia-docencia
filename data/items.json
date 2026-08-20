@@ -1,5 +1,37 @@
 [
   {
+    "id_hash": "6973a87b25a7c009",
+    "source": "profesoresdeele",
+    "url": "https://profesoresdeele.org/2026/08/19/oferta-de-trabajo-para-profesor-de-espanol-en-ceuta/",
+    "titulo": "Oferta de trabajo para profesor de español en Ceuta",
+    "fecha": "2026-08-19",
+    "categoria": "ele",
+    "first_seen_at": "2026-08-20T08:21:42.565934",
+    "summary": "Accem busca 2 profesores/as de ELE en Ceuta (turno mañana y tarde) para enseñar español a refugiados y migrantes. Contrato eventual hasta 31/12/2026, jornada completa, 26.284 € brutos/año. Deadline CV: 30/08/2026.",
+    "is_relevant": true,
+    "relevance_reason": "Vacante ELE (profesor de español para extranjeros a personas refugiadas y migrantes) en Ceuta. Las ofertas ELE son relevantes con independencia de la ubicación geográfica según el perfil objetivo.",
+    "process_type": "ele",
+    "organismo": "Accem",
+    "centro": "Accem - Ceuta",
+    "plazas": 2,
+    "deadline_inscripcion": "2026-08-30",
+    "fecha_publicacion_oficial": "2026-08-19",
+    "tasas_eur": null,
+    "url_bases": "https://profesoresdeele.org/2026/08/19/oferta-de-trabajo-para-profesor-de-espanol-en-ceuta/",
+    "url_inscripcion": "mailto:rrhh.seleccion@accem.es",
+    "requisitos_clave": [
+      "Diplomatura/Grado/Licenciatura en Humanidades (pref. Filología Hispánica) o Magisterio",
+      "Máster o experto universitario en ELE",
+      "Experiencia mínima 1 año como docente de ELE",
+      "Nivel intermedio de inglés, francés o árabe"
+    ],
+    "fase": "convocatoria",
+    "next_action": "Enviar CV a rrhh.seleccion@accem.es con asunto 'Oferta Docente de español Ceuta (vacante/s de interés)' antes del 30/08/2026.",
+    "confidence": 0.97,
+    "enriched_at": "2026-08-20T08:21:58.483355+00:00",
+    "enriched_version": 6
+  },
+  {
     "id_hash": "93dc83d326db32b7",
     "source": "boe",
     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17870",
