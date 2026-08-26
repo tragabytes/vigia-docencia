@@ -6,7 +6,7 @@
     "hits": 4,
     "active": true,
     "nearest_deadline": "2026-09-15",
-    "days_until": 21,
+    "days_until": 20,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -20,7 +20,7 @@
     "id": "T-02",
     "name": "Ministerio de Educación",
     "desc": "Ministerio de Educación, Formación Profesional y Deportes (MEFD)",
-    "hits": 3,
+    "hits": 4,
     "active": true,
     "nearest_deadline": null,
     "days_until": null,
@@ -29,7 +29,8 @@
     "item_ids": [
       "2f41268b400189b1",
       "5df72b4108ec6a17",
-      "78aeed9647197432"
+      "78aeed9647197432",
+      "c3fa8125fe81c8de"
     ]
   },
   {
@@ -86,16 +87,17 @@
     "id": "T-07",
     "name": "EOI Madrid",
     "desc": "Escuelas Oficiales de Idiomas (especialidad 008)",
-    "hits": 3,
+    "hits": 4,
     "active": true,
     "nearest_deadline": "2026-09-15",
-    "days_until": 21,
+    "days_until": 20,
     "urgent": false,
-    "latest_phase": "convocatoria",
+    "latest_phase": "propuesta_nombramiento",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
-      "deb0ee978dca3fec"
+      "deb0ee978dca3fec",
+      "c3fa8125fe81c8de"
     ]
   },
   {
