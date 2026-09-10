@@ -6,7 +6,7 @@
     "hits": 5,
     "active": true,
     "nearest_deadline": "2026-09-15",
-    "days_until": 6,
+    "days_until": 5,
     "urgent": true,
     "latest_phase": "otro",
     "item_ids": [
@@ -91,7 +91,7 @@
     "hits": 5,
     "active": true,
     "nearest_deadline": "2026-09-15",
-    "days_until": 6,
+    "days_until": 5,
     "urgent": true,
     "latest_phase": "otro",
     "item_ids": [
