@@ -89,7 +89,7 @@
     "id": "T-07",
     "name": "EOI Madrid",
     "desc": "Escuelas Oficiales de Idiomas (especialidad 008)",
-    "hits": 6,
+    "hits": 7,
     "active": true,
     "nearest_deadline": null,
     "days_until": null,
@@ -101,7 +101,8 @@
       "deb0ee978dca3fec",
       "c3fa8125fe81c8de",
       "7fabc1a2ba299eaf",
-      "0269633638fc77d3"
+      "0269633638fc77d3",
+      "7fdc17b50032c3db"
     ]
   },
   {
