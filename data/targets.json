@@ -3,7 +3,7 @@
     "id": "T-01",
     "name": "Consejería de Educación CM",
     "desc": "Comunidad de Madrid — Consejería de Educación, Ciencia y Universidades",
-    "hits": 9,
+    "hits": 10,
     "active": true,
     "nearest_deadline": null,
     "days_until": null,
@@ -18,7 +18,8 @@
       "0269633638fc77d3",
       "829f13ccf924bf82",
       "6fbb5bb243d22bdd",
-      "ddd87b96e7ec98ab"
+      "ddd87b96e7ec98ab",
+      "59c2a29a664770d1"
     ]
   },
   {
