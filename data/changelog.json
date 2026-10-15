@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-14",
+    "commit": "64485fa",
+    "kind": "fix",
+    "scope": "web",
+    "title": "etiqueta del modelo para enriched_version >= 2",
+    "body": "El dashboard solo reconocía las versiones 1 y 2 del enricher; con la 6"
+  },
+  {
     "date": "2026-06-02",
     "commit": "69c49d8",
     "kind": "fix",
@@ -22,13 +30,5 @@
     "scope": "",
     "title": "workflow que corre los tests en cada PR contra main (#3)",
     "body": "daily.yml y test-telegram.yml solo disparan en schedule/workflow_dispatch, así"
-  },
-  {
-    "date": "2026-06-02",
-    "commit": "4bb9cca",
-    "kind": "ci",
-    "scope": "",
-    "title": "no publicar __pycache__ en gh-pages (limpieza antes de git add -A)",
-    "body": "Mismo fix que vigia-enfermeria: el checkout a gh-pages arrastra caches de Python; se eliminan antes del git add -A."
   }
 ]
