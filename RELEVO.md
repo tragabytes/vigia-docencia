@@ -2,33 +2,19 @@
 
 Para arrancar una sesión: lee primero el `RELEVO.md` de vigia-core (estado común) y luego esto.
 
-**Estado (14/10/2026).** En producción con vigia-core **v0.10.0** (mira 3 días hacia atrás). Vigila BOE y BOCM (oposiciones e interinidades de secundaria, 0590/005 y 0592) y ProfesoresdeELE (ofertas ELE). Dailies en verde del 1 al 14/10; el enricher descartó como falsos positivos entre 2 y 8 items algunos días, y no salió ningún aviso nuevo.
+**Estado (16/10/2026).** En producción con vigia-core **v0.14.0** (mira 3 días hacia atrás). Además de BOE, BOCM y ProfesoresdeELE, desde el 16/10 lee **10 fuentes nuevas** (spec 001): TodoELE, Colejobs, Colegios.es, Novedades de RRHH de la Comunidad, Colegios RC e Inspired (SuccessFactors), CEU e ISP (Workday), SEK (Teamtailor), TES e Instituto Cervantes. El alcance del perfil se amplió el 16/10 (regla 1 del `CLAUDE.md`). Detalle y medidas en [`specs/001-buscar-fuentes-docencia/`](specs/001-buscar-fuentes-docencia/).
 
-**Después de la spec 001 (pedido por Laureano, 16/10):** revisar el uso de la API de Anthropic (modelo del enricher, coste, orquestación) frente a lo que hay disponible hoy.
+## Por comprobar
+1. **Primer daily real con las fuentes nuevas (lunes 19/10)**: las 12 fuentes con `0 errores`; el probe de todas en `ok`; avisos del orden de lo simulado (13 el primer día antes del enricher, luego unos 3-5 al día, sobre todo ELE en el extranjero). Cómo mirarlo: `MANTENIMIENTO.md` §3 del núcleo.
+2. **Que el enricher no descarte lo que vale**: en el dashboard, las ofertas de TodoELE, TES y colegios deberían salir como relevantes salvo las que exijan algo imposible (p. ej. universidad con plaza titular). Si descarta muchas, revisar el prompt (`_ENRICHER_SYSTEM_PROMPT`).
 
-**En marcha:** buscar y construir fuentes nuevas → [`specs/001-buscar-fuentes-docencia/`](specs/001-buscar-fuentes-docencia/tasks.md). La lista de abajo es la de partida; el catálogo de esa spec la sustituye cuando esté.
+## Pendientes
+- **Decidir (Laureano): InfoJobs por su API oficial.** Es donde publican muchos colegios (p. ej. Gredos San Diego); la web bloquea. Hace falta que alguien saque una clave en developer.infojobs.net y sus condiciones prohíben guardar sus datos (el bot guardaría solo título y enlace): zona gris. Detalle en `specs/001-buscar-fuentes-docencia/catalogo.md`.
+- **Decidir (Laureano): H4 de la spec 001**, lo que no se puede vigilar: recordatorio de Fulbright (no sale en el BOE; abre a mediados de septiembre), PADI, Talento ECM, bolsa de FSIE. La lista de Español en EOI (0592-006) de Madrid está abierta permanentemente.
+- **Revisar el uso de la API de Anthropic** (modelo del enricher, coste, orquestación) frente a lo que hay hoy (pedido por Laureano el 16/10).
+- **15 items de finales de septiembre sin enriquecer** (el límite de gasto de la API se agotó del 22 al 29/09; Laureano lo ha subido). Docencia no tiene workflow de mantenimiento que los reintente.
+- **Hueco que queda: ELE en Madrid y online.** Las academias pequeñas de Madrid (Aware, Expanish…) y las ofertas online solo aparecían en agregadores (Jobsora, Jooble) o LinkedIn, descartados por anti-robots, falta de clave o condiciones de uso.
+- **TES solo da las 20 más recientes** (la paginación por URL no funciona). Si un día hay más, se perderían; vigilar el volumen.
+- **Descartadas en el catálogo** (no volver a mirarlas sin motivo nuevo): sindicatos (van detrás de la Consejería), Nebrija, International House, Lingoda, FORMESPA, Jobsora/Jobijoba/Edutalent, Indeed, Empléate, Fomento, Talento ECM, colegios sin listado. Jooble y LinkedIn, fuera por decisión del 16/10.
 
-**Pendiente de decidir (Laureano):** InfoJobs por su API oficial. Es donde publican muchos colegios (p. ej. Gredos San Diego); la web bloquea. Hace falta que alguien saque una clave en developer.infojobs.net y sus condiciones prohíben guardar sus datos (el bot guardaría solo título y enlace): zona gris. Detalle en `specs/001-buscar-fuentes-docencia/catalogo.md`.
-
-## Fuentes que faltan
-
-Sacadas de `historico/ROADMAP.md` (que venía del bot anterior, `alerta-empleo-profe`, archivado). Ninguna está hecha a 14/10/2026.
-
-### Alta prioridad: privado y ELE
-- **Colegios privados y concertados del noroeste** → categoría `privada`. Cada uno con su plataforma: Inspired (`jobs.inspirededu.com`), SEK (Teamtailor), Brains (Factorial), Colegios RC / Highlands (SAP SuccessFactors; pausa de 4-6 s entre peticiones). *Grande.*
-- **Portales ELE** → categoría `ele`: Instituto Cervantes (sede y `hispanismo.cervantes.es`), TodoELE (HTML), Universidad Nebrija (la más activa en ELE). *Medio.*
-
-### Media prioridad: tiempo real y agregadores
-- **Canales sindicales de Telegram** (Telethon, o la versión web `t.me/s/{canal}`): `@ANPEmadrid`, `@csifeducacionmadrid`, `@ugteducacionpublicamadrid`, `@educacion_ccoomadrid`, `@noticiasoposicionessecundaria`, `@bolsasdocentes`, `@opobusca`. Dan horas de ventaja. *Medio.*
-- **InfoJobs y Jooble por API** (claves gratuitas; Jooble agrega InfoJobs, Indeed y LinkedIn). Filtro Madrid; búsquedas `profesor historia`, `profesor secundaria`, `profesor español extranjeros`. *Medio.*
-
-### Baja prioridad
-- **LinkedIn** (API de invitado, con calma) e **Indeed** (RSS no oficial, frágil). *Medio.*
-- **Revisión semanal** de ayuntamientos del noroeste y universidades (UCM, UC3M, Comillas, CEU, URJC, UCJC, UFV, UEM). *Medio.*
-- **Alertas de calendario**, sin web que leer: Fulbright FLTA y Auxiliares MEFP (septiembre), AECID lectorados y Profesores Visitantes (enero), oposiciones EOI Madrid (marzo-abril), becas Cervantes (mayo-julio). *Pequeño.*
-- **Recordatorios manuales** de webs que no se pueden automatizar: Talento ECM, FSIE, italki, Preply, Superprof, Lingoda. *Pequeño, quizá fuera del bot.*
-
-Secrets que harán falta: `INFOJOBS_CLIENT_ID`, `INFOJOBS_CLIENT_SECRET`, `JOOBLE_API_KEY`, `TELEGRAM_API_ID`, `TELEGRAM_API_HASH`.
-
-### Mantenimiento
-- **Acciones de GitHub con Node 20** (`checkout@v4`, `setup-python@v5`): GitHub ya las ejecuta con Node 24 y funcionan, pero avisa. Ver núcleo, `DECISIONES.md` D17.
+Histórico del ROADMAP original en [`historico/ROADMAP.md`](historico/ROADMAP.md).

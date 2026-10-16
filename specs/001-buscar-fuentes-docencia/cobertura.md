@@ -70,3 +70,25 @@ Descartadas por ser en inglés (currículo británico) o de otra materia: ISP Ke
 3. **Caras o imposibles sin clave o navegador**: InfoJobs (la web bloquea; habría que usar su API con clave), Indeed (bloquea), LinkedIn (limita), Jobsora y Jobijoba (anti-robots y fechas que se reindexan), Inspired (necesita navegador), ISP/Workday (error).
 4. **Ruido a filtrar**: los agregadores están llenos de anuncios de clases particulares (Apprentus, Tusclasesparticulares, Cronoshare) y de anuncios viejos reindexados como nuevos.
 5. **Grupos que no estaban en el informe y publican Historia**: ISP (Laude, Kensington), Colegios CEU, Kolbe, Runnymede.
+
+## Después de H3 (16/10/2026, misma ventana del 18/09 al 16/10)
+
+Las 10 fuentes nuevas, pasadas por el extractor del perfil (antes del enricher):
+
+| Fuente | Del perfil en el periodo |
+|---|---|
+| TodoELE | 53 (casi todas ELE en EE. UU., Reino Unido, Emiratos, China; 5 en España) |
+| TES | 9 (últimos 3 días; la página solo da las 20 más recientes) |
+| Novedades RRHH de la Comunidad | 5 |
+| Colejobs | 1 |
+| Colegios.es | 1 |
+| SEK (Teamtailor) | 1 |
+| CEU + ISP (Workday), Colegios RC + Inspired (SuccessFactors), Cervantes | 0 en el periodo (ISP «Business e Historia» es de mediados de septiembre) |
+| **Total** | **70** (antes: 0) |
+
+**Cruce con las 25 de H1: el bot vería ahora ~9-10** (antes 0):
+- Colegios de Madrid: 2-3 de 11 (Colejobs, Colegios.es, ISP). Siguen fuera: Kolbe (solo Indeed), Gredos San Diego (InfoJobs, pendiente de decidir), CEU (ya no están publicadas), Kensington y Arenales.
+- ELE en España y el extranjero: ~7 de 10 (TodoELE). Fuera: academias de Málaga y Valencia que solo salen en agregadores.
+- ELE en Madrid y online: 0 de 4. Solo salían en Jobsora, Jooble o LinkedIn, descartados (anti-robots, sin clave o prohibido).
+
+**Primer día real (simulado con copia de la base): 13 avisos nuevos antes del enricher**, 0 errores en 12 fuentes, run de 140 s.
