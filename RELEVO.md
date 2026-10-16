@@ -4,6 +4,8 @@ Para arrancar una sesión: lee primero el `RELEVO.md` de vigia-core (estado com�
 
 **Estado (14/10/2026).** En producción con vigia-core **v0.10.0** (mira 3 días hacia atrás). Vigila BOE y BOCM (oposiciones e interinidades de secundaria, 0590/005 y 0592) y ProfesoresdeELE (ofertas ELE). Dailies en verde del 1 al 14/10; el enricher descartó como falsos positivos entre 2 y 8 items algunos días, y no salió ningún aviso nuevo.
 
+**En marcha:** buscar y construir fuentes nuevas → [`specs/001-buscar-fuentes-docencia/`](specs/001-buscar-fuentes-docencia/tasks.md). La lista de abajo es la de partida; el catálogo de esa spec la sustituye cuando esté.
+
 ## Fuentes que faltan
 
 Sacadas de `historico/ROADMAP.md` (que venía del bot anterior, `alerta-empleo-profe`, archivado). Ninguna está hecha a 14/10/2026.

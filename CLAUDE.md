@@ -5,6 +5,7 @@ Bot de empleo **docente** sobre vigia: secundaria de **Geografía e Historia** y
 | Fichero | Para qué |
 |---|---|
 | [`RELEVO.md`](RELEVO.md) | Estado y fuentes que faltan. **Punto de entrada** |
+| [`specs/`](specs/) | Una carpeta por cada cosa nueva: `spec.md` (qué y por qué) y `tasks.md` (estado) |
 | [vigia-core: `CLAUDE.md`](https://github.com/tragabytes/vigia-core/blob/main/CLAUDE.md) | Reglas del pipeline, comunes a todos los bots |
 | [vigia-core: `DECISIONES.md`](https://github.com/tragabytes/vigia-core/blob/main/DECISIONES.md) | Decisiones tomadas en ausencia de Laureano, de todos los repos de vigia |
 | [vigia-core: `MANTENIMIENTO.md`](https://github.com/tragabytes/vigia-core/blob/main/MANTENIMIENTO.md) | Ver producción, leer un run, publicar el núcleo, crear una fuente |
