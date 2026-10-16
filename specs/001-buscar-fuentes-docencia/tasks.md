@@ -7,7 +7,7 @@ Spec: [`spec.md`](spec.md). Respuestas de Laureano del 16/10/2026 en la spec.
 - [x] Anotar de cada una dónde apareció (todas las webs) y la fecha
 - [x] Cruzar con la base real de docencia (rama `state`): ¿la vio el bot?
 - [x] Resultado: tabla [`cobertura.md`](cobertura.md) — **el bot vio 0 de 25** (11 colegios, 14 ELE; 0 públicas abiertas)
-- [ ] **Parar y validar con Laureano**: ¿las ofertas encontradas son las que le interesan a su hermano?
+- [x] **Parar y validar con Laureano**: validado el 16/10 (mixtas, parte en inglés y ELE en el extranjero valen; respuestas en la spec)
 
 ## H2 · Catálogo comprobado
 Cada candidata se mira hoy contra la web real (sin esquivar bloqueos, sin cuenta) y acaba con veredicto, prueba, valor y coste en `catalogo.md`. Por tandas:

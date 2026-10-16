@@ -87,7 +87,7 @@ Las fuentes con veredicto *solo recordatorio* se convierten en avisos por fecha 
 
 | Invariante | Dónde está escrito | ¿Puede romperse en silencio? |
 |---|---|---|
-| El alcance del perfil (0590/005 y 0592; privado en la Comunidad de Madrid y online desde el 16/10; ELE en cualquier sitio; sin primaria, sin universidad general, sin puestos solo en inglés) no se cambia sin preguntar | `CLAUDE.md` de docencia, regla 1 | Sí: una fuente nueva con ofertas fuera de alcance llenaría el dashboard sin que nadie lo note. Test por fuente: ofertas reales fuera de alcance no pasan el extractor |
+| El alcance del perfil (0590/005 y 0592-006; privado en la Comunidad de Madrid y online, también puestos mixtos de materias o con parte en inglés, desde el 16/10; ELE en cualquier sitio; sin primaria, sin universidad general, sin puestos enteramente en inglés) no se cambia sin preguntar | `CLAUDE.md` de docencia, regla 1 | Sí: una fuente nueva con ofertas fuera de alcance llenaría el dashboard sin que nadie lo note. Test por fuente: ofertas reales fuera de alcance no pasan el extractor |
 | Fuente genérica al núcleo; de perfil docente, a este repo; una fuente por PR | `CLAUDE.md` de docencia, regla 2 | No |
 | Probe ≠ runtime: una fuente puede responder 200 y no leer nada | núcleo, regla 5 | **Sí, el más peligroso**: un cambio en la web deja la fuente en 0 para siempre (pasó con la UAH cuatro semanas). Test por fuente: el probe cuenta elementos y da error si son 0 |
 | Los errores de fuente no van al Telegram | núcleo, `historico/incidents` de enfermería | No (se vería) |
@@ -104,6 +104,11 @@ Las fuentes con veredicto *solo recordatorio* se convierten en avisos por fecha 
 - **Zona del privado: toda la Comunidad de Madrid y también online** (academias y plataformas que dan clase en remoto). Amplía el alcance del perfil, que antes decía «colegios privados, solo Madrid» sin incluir lo online: al construir H3 se actualiza la regla 1 del `CLAUDE.md` de docencia.
 - **InfoJobs, Jooble y canales de Telegram, sí**: se evalúan como el resto, y para cada una se explica qué clave o cuenta hace falta y cómo sacarla. Laureano o su hermano la sacan; Claude no crea cuentas.
 - **El perfil sigue igual que en abril**: Historia con máster, ELE, inglés C1, sin puestos bilingües.
+
+**Validación de H1 (Laureano, 16/10/2026):**
+- **Ofertas que mezclan materias** (Economía + Historia, Lengua + Historia): **valen**.
+- **Colegios con parte de las clases en inglés**: **valen**. Se interpreta que los puestos **enteramente** en inglés (p. ej. Geography en currículo británico) siguen fuera, como decía el perfil.
+- **ELE en el extranjero**: **todas valen**, incluidas universidades y colegios de EE. UU., Reino Unido o Emiratos.
 
 ## Supuestos
 
