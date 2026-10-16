@@ -28,7 +28,7 @@ Resultado: [`catalogo.md`](catalogo.md) (16/10).
 - [x] Paso 0: perfil con el alcance del 16/10 (el extractor tiraba 11 de 15 ofertas reales) — PR #32
 - [x] 1 TodoELE — primer día: 1 aviso (simulado); 64 ofertas leídas
 - [x] 2 Colejobs — filtra Comunidad de Madrid/online y materias del perfil; primer día: 0 avisos (simulado); 82 ofertas leídas
-- [ ] 3 Colegios.es
+- [x] 3 Colegios.es — RSS con páginas; Comunidad de Madrid/online y materias; primer día: 1 aviso (Geografía e Historia, Alcalá, 13/10)
 - [ ] 4 Novedades de Recursos Humanos (comunidad.madrid)
 - [ ] 5 Colegios RC / Highlands (lector SuccessFactors del núcleo)
 - [ ] 6 Workday: CEU + ISP (núcleo)
