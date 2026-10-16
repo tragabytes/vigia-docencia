@@ -134,11 +134,13 @@ def test_profesor_titular_descartado():
     assert item is None
 
 
-def test_rol_bilingue_ingles_descartado():
+def test_rol_bilingue_ingles_ya_no_se_descarta():
+    # Cambiado el 16/10/2026: Laureano amplió el alcance a colegios con parte
+    # de las clases en inglés (spec 001). Antes se descartaba.
     item = extract(_raw(
         "Profesor de secundaria bilingüe en inglés - colegio Madrid"
     ))
-    assert item is None
+    assert item is not None
 
 
 def test_clases_en_ingles_descartado():
