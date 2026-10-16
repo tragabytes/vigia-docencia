@@ -3,10 +3,10 @@
 Spec: [`spec.md`](spec.md). Respuestas de Laureano del 16/10/2026 en la spec.
 
 ## H1 · Cuánto se está perdiendo
-- [ ] Buscar a mano ofertas reales del perfil de las últimas 4 semanas (mín. 20): públicas, privadas en la Comunidad de Madrid, online y ELE
-- [ ] Anotar de cada una dónde apareció (todas las webs) y la fecha
-- [ ] Cruzar con la base real de docencia (rama `state`): ¿la vio el bot?
-- [ ] Resultado: tabla `cobertura.md` en esta carpeta, con «el bot vio X de N» por mercado
+- [x] Buscar a mano ofertas reales del perfil de las últimas 4 semanas (mín. 20): públicas, privadas en la Comunidad de Madrid, online y ELE
+- [x] Anotar de cada una dónde apareció (todas las webs) y la fecha
+- [x] Cruzar con la base real de docencia (rama `state`): ¿la vio el bot?
+- [x] Resultado: tabla [`cobertura.md`](cobertura.md) — **el bot vio 0 de 25** (11 colegios, 14 ELE; 0 públicas abiertas)
 - [ ] **Parar y validar con Laureano**: ¿las ofertas encontradas son las que le interesan a su hermano?
 
 ## H2 · Catálogo comprobado
@@ -37,6 +37,12 @@ Cada una lleva, antes de publicar:
 
 ## H4 · Lo que no se puede vigilar
 - [ ] Decidir con Laureano la forma (avisos por fecha, lista fija en el dashboard…) cuando H2 diga cuántas son
+
+## Aparecido al ejecutar (16/10)
+- **Límite de gasto de la API agotado a finales de septiembre** («You have reached your specified API usage limits… 2026-10-01»). Del 22 al 29/09 el enricher no resumió nada: 15 items de docencia y 1 de enfermería siguen sin enriquecer, y por no estar marcados «no relevantes» probablemente llegaron a Telegram sin filtrar. Docencia no tiene workflow de mantenimiento que los reintente. **Afecta a H3**: más fuentes = más llamadas. Pendiente: decidir con Laureano el límite y reintentar esos items.
+
+- **Etiqueta errónea en el perfil**: la watchlist dice «EOI (especialidad 008)», pero en Madrid Español para extranjeros es la **0592-006** (la 008 es Francés). No afecta a la búsqueda (se busca «cuerpo 0592» sin especialidad); sí conviene corregir la etiqueta y mirar si «cuerpo 0592» deja pasar EOI de otros idiomas.
+- **Las listas extraordinarias de interinos de Madrid no pasan por el BOCM**: se publican solo en la sede y en la página de Novedades de Recursos Humanos de comunidad.madrid. Candidata fuerte para H2.
 
 ## Cierre
 - [ ] Repetir la medida de H1 con las fuentes nuevas: «X de N» antes y después
