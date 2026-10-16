@@ -16,6 +16,7 @@ from __future__ import annotations
 
 from vigia.profile import Profile
 from vigia.sources.sap_successfactors import SapEmpresa
+from vigia.sources.teamtailor import TeamtailorPortal
 from vigia.sources.workday import WorkdayPortal
 from vigia_docencia.sources.bocm import BOCMSource
 from vigia_docencia.sources.colegios_es import ColegiosEsSource
@@ -422,6 +423,7 @@ _ENRICHER_ALLOWED_FETCH_HOSTS = frozenset({
     "empleo.colegiosrc.es",
     "ceu.wd3.myworkdayjobs.com", "internationalschools.wd3.myworkdayjobs.com",
     "jobs.inspirededu.com",
+    "empleo.sek.es",
     # Ministerio de Educación, FP y Deportes
     "educacionfpydeportes.gob.es", "www.educacionfpydeportes.gob.es",
     "educacion.gob.es", "www.educacion.gob.es",
@@ -497,7 +499,7 @@ PERFIL_DOCENCIA = Profile(
     diff_system_prompt=_DIFF_SYSTEM_PROMPT,
     sources_enabled=("boe", "bocm", "profesoresdeele", "todoele", "colejobs", "colegios_es",
                      "novedades_rrhh", "sap_successfactors",
-                     "workday"),
+                     "workday", "teamtailor"),
     # El BOCM del fork es una reescritura RSS → fuente custom que sobrescribe la
     # del core (clave "bocm"). El BOE se reusa del core, parametrizado abajo.
     # profesoresdeele: feed RSS de ofertas ELE (categoría "Ofertas de trabajo").
@@ -542,6 +544,22 @@ PERFIL_DOCENCIA = Profile(
         # Lector Workday del núcleo (spec 001, catálogo n.º 6). Ubicación por
         # las facetas de cada portal: en ISP, por colegios (su región «Madrid»
         # arrastra Portugal por la oficina de ISP Iberia).
+        # Lector Teamtailor del núcleo (spec 001, catálogo n.º 8): SEK.
+        "teamtailor": {
+            "portales": [
+                TeamtailorPortal(
+                    "SEK_MADRID", "SEK Education Group",
+                    "https://empleo.sek.es/jobs.rss",
+                    palabras=_MATERIAS_COLEGIOS + ("history", "geography", "humanities"),
+                    ubicaciones=("madrid", "alcobendas"),
+                ),
+                TeamtailorPortal(
+                    "SEK_ELE", "SEK Education Group (español, cualquier país)",
+                    "https://empleo.sek.es/jobs.rss",
+                    palabras=("spanish", "espanol"),
+                ),
+            ],
+        },
         "workday": {
             "portales": [
                 WorkdayPortal(

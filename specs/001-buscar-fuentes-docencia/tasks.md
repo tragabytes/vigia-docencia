@@ -33,7 +33,7 @@ Resultado: [`catalogo.md`](catalogo.md) (16/10).
 - [x] 5 Colegios RC / Highlands (lector SuccessFactors del núcleo) — núcleo v0.11.0 (empresas por perfil) y v0.11.1 (arreglo: el lector filtraba con las palabras de enfermería en silencio); hoy 0 del perfil
 - [x] 6 Workday: CEU + ISP (núcleo v0.12.0) — CEU Madrid/Boadilla, 3 colegios ISP de Madrid y «Spanish teacher» de ISP en el mundo; filtro de materias en la fuente
 - [x] 7 Inspired (núcleo v0.13.0: búsqueda en la URL y palabras por empresa) — solo colegios de Madrid; la búsqueda por palabra de SuccessFactors es amplia y no sirve para ELE; hoy 0 del perfil
-- [ ] 8 SEK / Teamtailor (núcleo)
+- [x] 8 SEK / Teamtailor (núcleo v0.14.0) — colegios de Madrid por materias y «Spanish teacher» en cualquier país; primer día: 1 aviso (Spanish Teacher, Arabia Saudí, 14/10)
 - [ ] 9 TES
 - [ ] 10 Instituto Cervantes
 
