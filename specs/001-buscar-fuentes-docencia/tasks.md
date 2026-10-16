@@ -22,18 +22,29 @@ Resultado: [`catalogo.md`](catalogo.md) (16/10).
 - [x] Recordatorios
 - [x] Fuentes nuevas fuera del informe (TES, Workday CEU/ISP, Cognita, Maristas Ibérica)
 - [x] Orden de construcción por valor / coste
-- [ ] **Parar y validar con Laureano**: orden de construcción, claves (InfoJobs, Jooble, LinkedIn) y límite de gasto de la API
+- [x] **Parar y validar con Laureano** (16/10): «adelante con todo»; Laureano sube el límite de gasto de la API; InfoJobs queda pendiente (ver `RELEVO.md`); Jooble y LinkedIn fuera
 
 ## H3 · Construir (una fuente por PR, en el orden validado)
+- [x] Paso 0: perfil con el alcance del 16/10 (el extractor tiraba 11 de 15 ofertas reales) — PR #32
+- [x] 1 TodoELE — primer día: 1 aviso (simulado); 64 ofertas leídas
+- [ ] 2 Colejobs
+- [ ] 3 Colegios.es
+- [ ] 4 Novedades de Recursos Humanos (comunidad.madrid)
+- [ ] 5 Colegios RC / Highlands (lector SuccessFactors del núcleo)
+- [ ] 6 Workday: CEU + ISP (núcleo)
+- [ ] 7 Inspired (núcleo)
+- [ ] 8 SEK / Teamtailor (núcleo)
+- [ ] 9 TES
+- [ ] 10 Instituto Cervantes
+
 Por cada fuente:
-- [ ] (se rellena al cerrar H2)
 
 Cada una lleva, antes de publicar:
 - prueba contra la web real (qué habría avisado);
 - simulación con copia de la base real: sin avalancha y sin repetidas;
 - tests: el probe da error si lee 0; ofertas reales fuera de alcance no pasan el extractor; dos lecturas seguidas no dan avisos nuevos.
 
-- [ ] Actualizar la regla 1 del `CLAUDE.md` de docencia con el alcance nuevo (Comunidad de Madrid y online)
+- [x] Actualizar la regla 1 del `CLAUDE.md` de docencia con el alcance nuevo (Comunidad de Madrid y online) — PR #32
 
 ## H4 · Lo que no se puede vigilar
 - [ ] Decidir con Laureano la forma (avisos por fecha, lista fija en el dashboard…) cuando H2 diga cuántas son

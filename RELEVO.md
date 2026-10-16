@@ -6,6 +6,8 @@ Para arrancar una sesión: lee primero el `RELEVO.md` de vigia-core (estado com�
 
 **En marcha:** buscar y construir fuentes nuevas → [`specs/001-buscar-fuentes-docencia/`](specs/001-buscar-fuentes-docencia/tasks.md). La lista de abajo es la de partida; el catálogo de esa spec la sustituye cuando esté.
 
+**Pendiente de decidir (Laureano):** InfoJobs por su API oficial. Es donde publican muchos colegios (p. ej. Gredos San Diego); la web bloquea. Hace falta que alguien saque una clave en developer.infojobs.net y sus condiciones prohíben guardar sus datos (el bot guardaría solo título y enlace): zona gris. Detalle en `specs/001-buscar-fuentes-docencia/catalogo.md`.
+
 ## Fuentes que faltan
 
 Sacadas de `historico/ROADMAP.md` (que venía del bot anterior, `alerta-empleo-profe`, archivado). Ninguna está hecha a 14/10/2026.
