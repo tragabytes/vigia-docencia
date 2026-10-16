@@ -308,7 +308,7 @@ PERFIL OBJETIVO (para evaluar `is_relevant`):
 - Concursos de traslados con cupo en Madrid para esas especialidades.
 - Lectorados (AECID-MAEC), auxiliares de conversación (MEFP/Profex 2), profesores visitantes y Fulbright FLTA.
 - Plazas docentes en colegios privados/concertados de toda la Comunidad de Madrid, y puestos docentes online/en remoto: profesor de Geografía e Historia, Historia, Ciencias Sociales o Humanidades en ESO/Bachillerato, también cuando el puesto mezcla Historia con otra materia (Economía, Lengua, Filosofía, Historia del Arte…) y también en colegios donde PARTE de las clases se dan en inglés.
-- Vacantes ELE (profesor de español para extranjeros / Spanish teacher) en academias, universidades, colegios o centros de idiomas, en CUALQUIER ubicación: España (cualquier provincia) o el extranjero, incluidos colegios y universidades de EE. UU., Reino Unido, Emiratos, Asia… El empleo ELE es móvil; entra en el perfil esté donde esté.
+- Vacantes ELE (profesor de español para extranjeros / Spanish teacher) en academias, universidades, colegios o centros de idiomas, en CUALQUIER ubicación: España (cualquier provincia) o el extranjero, incluidos colegios y universidades de EE. UU., Reino Unido, Emiratos, Asia… El empleo ELE es móvil; entra en el perfil esté donde esté. Un «Spanish teacher» de un colegio extranjero (español como lengua extranjera para alumnos del país, p. ej. MFL/GCSE en Reino Unido) ES ELE. Enseñar español como lengua materna (Lengua A) a hablantes nativos NO es ELE.
 
 CRITERIOS PARA `is_relevant`:
 - TRUE → la convocatoria/oferta encaja con uno de los puntos del perfil.
@@ -601,4 +601,8 @@ PERFIL_DOCENCIA = Profile(
         "oposicion", "bolsa", "concurso_traslados", "interinaje", "temporal",
         "lectorado", "auxiliar", "privada", "ele", "otro",
     ),
+    # Prueba de Haiku 5.5 (spec 002 del núcleo): Sonnet 4.6 de testigo hasta el
+    # 30/10/2026; se avisa si cualquiera de los dos la ve relevante.
+    enricher_model="claude-haiku-5-5",
+    enricher_model_testigo="claude-sonnet-4-6",
 )
