@@ -1,6 +1,6 @@
 # Especificación: encontrar nuevas fuentes de empleo docente
 
-**Carpeta**: `specs/001-buscar-fuentes-docencia/` · **Fecha**: 2026-10-16 · **Estado**: borrador
+**Carpeta**: `specs/001-buscar-fuentes-docencia/` · **Fecha**: 2026-10-16 · **Estado**: H1-H3 hechas (16/10/2026); H4 pendiente
 
 **Lo que se pidió** (Laureano, 16/10/2026): «elabora un plan a fondo para encontrar nuevas fuentes de docencia».
 

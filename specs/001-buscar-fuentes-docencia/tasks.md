@@ -56,7 +56,15 @@ Cada una lleva, antes de publicar:
 - **Los listados de las listas extraordinarias de Madrid no pasan por el BOCM** (las convocatorias sí): salen en Novedades de Recursos Humanos de comunidad.madrid. N.º 4 del catálogo.
 
 ## Cierre
-- [ ] Repetir la medida de H1 con las fuentes nuevas: «X de N» antes y después
-- [ ] Suite del bot y del núcleo en verde; dry-run del CI
-- [ ] Primer daily real de cada fuente vigilado (`MANTENIMIENTO.md` §3 del núcleo)
-- [ ] Lo aprendido, aquí; `RELEVO.md` al día
+- [x] Repetir la medida de H1 con las fuentes nuevas: de 0 a ~9-10 de 25; 70 ofertas del perfil en el periodo (ver `cobertura.md`)
+- [x] Suite del bot (79) y del núcleo (582) en verde; CI de cada PR en verde
+- [ ] Primer daily real de cada fuente vigilado (`MANTENIMIENTO.md` §3 del núcleo): el lunes 19/10 (el 16/10 es viernes)
+- [x] Lo aprendido, aquí; `RELEVO.md` al día
+
+## Lo aprendido
+- **El perfil escrito para boletines tiraba en silencio las ofertas de colegios y de ELE** (11 de 15). Cada fuente nueva lleva un test con títulos reales que pasan el extractor.
+- **El patrón «profesor de secundaria» deja pasar cualquier materia de los colegios**: las fuentes de colegios filtran materias en la propia fuente.
+- **Una fuente del núcleo importada desde el perfil se queda con las palabras del perfil por defecto** (SuccessFactors): arreglado en el núcleo v0.11.1 y anotado en su regla 7.
+- **Las webs sin fecha de publicación** (TodoELE, Cervantes) necesitan otra fuente de fecha (sitemap, ficha) para no avisar de todo el primer día.
+- **Workday**: la clave de faceta es la del nivel anidado; pasado el total, la API repite resultados. **TES** ignora la paginación por URL.
+- Las simulaciones con copia de la base real cazaron cuatro fallos antes de publicar (ruido de Colejobs, palabras de enfermería en SuccessFactors, facetas y repeticiones de Workday).
