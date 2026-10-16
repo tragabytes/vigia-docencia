@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-10-16",
+    "commit": "75b27e2",
+    "kind": "ci",
+    "scope": "",
+    "title": "checkout@v5 y setup-python@v6 (Node 24)",
+    "body": "Solo cambian el runtime a Node 24; la persistencia de credenciales que usa"
+  },
+  {
     "date": "2026-10-14",
     "commit": "64485fa",
     "kind": "fix",
@@ -22,13 +30,5 @@
     "scope": "fuente",
     "title": "ProfesoresdeELE — ofertas ELE vía RSS de categoría (#2)",
     "body": "Primera fuente de la fase de ampliación (ROADMAP, 1 fuente/PR). Añade el feed"
-  },
-  {
-    "date": "2026-06-02",
-    "commit": "4ee6740",
-    "kind": "ci",
-    "scope": "",
-    "title": "workflow que corre los tests en cada PR contra main (#3)",
-    "body": "daily.yml y test-telegram.yml solo disparan en schedule/workflow_dispatch, así"
   }
 ]
