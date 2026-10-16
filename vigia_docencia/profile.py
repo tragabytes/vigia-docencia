@@ -62,6 +62,17 @@ _STRONG_PATTERNS = [
     r"auxiliar(?:es)?\s+(?:de\s+)?conversacion",
     r"profesor(?:ado|es)?\s+visitante",
     r"profesor(?:ado|es)?\s+(?:de\s+)?espanol\s+(?:en|para)",
+    # --- Colegios privados y ELE (alcance del 16/10/2026, spec 001) ---
+    # Ofertas de colegios: Historia sola o mezclada con otra materia.
+    r"profesor(?:a|es|as)?\b.{0,60}\bhistoria\b",
+    r"\bhistoria\b.{0,40}\b(?:eso|bachillerato)\b",
+    r"\bciencias\s+sociales\b.{0,40}\b(?:eso|bachillerato|secundaria)\b",
+    r"\bsociales\s+humanidades\b",
+    r"profesor(?:a|es|as)?\b.{0,40}\b(?:ciencias\s+sociales|humanidades)\b",
+    # ELE: títulos en inglés (TodoELE, TES) y "profesor de español".
+    r"\bspanish\s+(?:language\s+)?teacher\b",
+    r"\bteacher\s+of\s+spanish\b",
+    r"profesor(?:a|es|as)?\s+(?:de\s+)?espanol\b",
 ]
 
 # Match débil: solo si ADEMÁS aparece el confirmador en una ventana de 100 chars.
@@ -87,10 +98,10 @@ _FALSE_POSITIVE_PATTERNS = [
     r"\bmaestros?\b.{0,40}(?:cuerpo\s+0597|infantil|primaria)",
     r"cuerpo\s+0597",
     r"educacion\s+infantil",
-    # Roles 100% en inglés — filtro intencional del informe
-    r"bilingue.{0,40}ingles",
-    r"impartir.{0,40}en\s+ingles",
-    r"clases.{0,30}en\s+ingles",
+    # Roles 100% en inglés. Desde el 16/10/2026 (Laureano, spec 001) los
+    # puestos con PARTE de las clases en inglés valen: ya no se descartan
+    # "bilingüe … inglés" ni "clases en inglés"; decide el enricher. Los de
+    # currículo británico no llegan a pasar (títulos en inglés sin "Spanish").
     r"english\s+(?:teacher|speaking)",
     # Universidad: PDI, ayudante doctor, profesor contratado, titular
     r"profesor(?:a|es)?\s+(?:ayudante|contratado|titular|asociado|colaborador|emerito)",
@@ -138,6 +149,8 @@ _CATEGORY_HINTS = {
         "aecid",
     ],
     "ele": [
+        "spanish teacher",
+        "spanish language teacher",
         "ele ",
         "espanol para extranjeros",
         "espanol como lengua extranjera",
@@ -204,7 +217,7 @@ _WATCHLIST_ORGS = [
      "desc": "Fulbright España — Foreign Language Teaching Assistant",
      "patterns": ["fulbright", "flta"]},
     {"id": "T-07", "name": "EOI Madrid",
-     "desc": "Escuelas Oficiales de Idiomas (especialidad 008)",
+     "desc": "Escuelas Oficiales de Idiomas (Español para extranjeros, especialidad 006)",
      "patterns": ["escuela oficial de idiomas", "escuelas oficiales de idiomas",
                   " eoi ", "cuerpo 0592"]},
     # --- Sindicatos / canales de información en tiempo real ---
@@ -285,8 +298,8 @@ PERFIL OBJETIVO (para evaluar `is_relevant`):
 - Bolsas/listas extraordinarias e interinidades de las dos anteriores.
 - Concursos de traslados con cupo en Madrid para esas especialidades.
 - Lectorados (AECID-MAEC), auxiliares de conversación (MEFP/Profex 2), profesores visitantes y Fulbright FLTA.
-- Plazas docentes en colegios privados/concertados de Madrid (zona noroeste).
-- Vacantes ELE (profesor de español para extranjeros) en academias, universidades o centros de idiomas, en CUALQUIER ubicación: España (cualquier provincia) o el extranjero. El empleo ELE es móvil; entra en el perfil esté donde esté.
+- Plazas docentes en colegios privados/concertados de toda la Comunidad de Madrid, y puestos docentes online/en remoto: profesor de Geografía e Historia, Historia, Ciencias Sociales o Humanidades en ESO/Bachillerato, también cuando el puesto mezcla Historia con otra materia (Economía, Lengua, Filosofía, Historia del Arte…) y también en colegios donde PARTE de las clases se dan en inglés.
+- Vacantes ELE (profesor de español para extranjeros / Spanish teacher) en academias, universidades, colegios o centros de idiomas, en CUALQUIER ubicación: España (cualquier provincia) o el extranjero, incluidos colegios y universidades de EE. UU., Reino Unido, Emiratos, Asia… El empleo ELE es móvil; entra en el perfil esté donde esté.
 
 CRITERIOS PARA `is_relevant`:
 - TRUE → la convocatoria/oferta encaja con uno de los puntos del perfil.
@@ -294,9 +307,10 @@ CRITERIOS PARA `is_relevant`:
     * Cuerpo 0597 (Maestros, infantil/primaria).
     * Universidad: PDI, Ayudante Doctor, Profesor Contratado, Titular, Asociado.
     * Otras especialidades de secundaria sin solapamiento (Matemáticas, Física, etc.).
-    * Roles "bilingüe" donde se exige impartir TODO en inglés (el perfil tiene C1 sólido pero no es bilingüe nativo).
+    * Puestos que se imparten ENTEROS en inglés (p. ej. Geography en currículo británico). Si solo PARTE de las clases es en inglés, SÍ es relevante.
+    * Clases particulares en marketplaces (Apprentus, Superprof, Tusclasesparticulares): no son ofertas de empleo.
     * Nombramientos / ceses individuales sin plazas nuevas.
-- ÁMBITO GEOGRÁFICO: las plazas públicas de secundaria (oposiciones, bolsas, interinidades, concursos de traslados) y los colegios privados se ciñen a Madrid. PERO las vacantes ELE y los lectorados/auxiliares/profesores visitantes son relevantes en CUALQUIER ubicación (otras provincias de España o el extranjero); NO marques is_relevant=false por no ser de Madrid.
+- ÁMBITO GEOGRÁFICO: las plazas públicas de secundaria (oposiciones, bolsas, interinidades, concursos de traslados) y los colegios privados se ciñen a la Comunidad de Madrid (los puestos online también valen). PERO las vacantes ELE y los lectorados/auxiliares/profesores visitantes son relevantes en CUALQUIER ubicación (otras provincias de España o el extranjero); NO marques is_relevant=false por no ser de Madrid.
 - En la duda, prioriza FALSE — el sistema reduce ruido eliminando items con is_relevant=false.
 
 CRITERIOS PARA `process_type`:
