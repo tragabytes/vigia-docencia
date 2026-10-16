@@ -16,6 +16,7 @@ from __future__ import annotations
 
 from vigia.profile import Profile
 from vigia.sources.sap_successfactors import SapEmpresa
+from vigia.sources.workday import WorkdayPortal
 from vigia_docencia.sources.bocm import BOCMSource
 from vigia_docencia.sources.colegios_es import ColegiosEsSource
 from vigia_docencia.sources.colejobs import ColejobsSource
@@ -419,6 +420,7 @@ _ENRICHER_ALLOWED_FETCH_HOSTS = frozenset({
     "colejobs.es", "www.colejobs.es",
     "colegios.es", "www.colegios.es",
     "empleo.colegiosrc.es",
+    "ceu.wd3.myworkdayjobs.com", "internationalschools.wd3.myworkdayjobs.com",
     # Ministerio de Educación, FP y Deportes
     "educacionfpydeportes.gob.es", "www.educacionfpydeportes.gob.es",
     "educacion.gob.es", "www.educacion.gob.es",
@@ -447,6 +449,13 @@ _DIFF_SYSTEM_PROMPT = (
     "3. Si es COSMÉTICO: deja el resumen vacío.\n\n"
     "Devuelve EXACTAMENTE este JSON sin texto adicional ni markdown:\n"
     "{\"sustantivo\": true|false, \"resumen\": \"...\"}"
+)
+
+# Materias del perfil en títulos de ofertas de colegios (lectores del núcleo
+# con filtro propio: Workday). Normalizadas.
+_MATERIAS_COLEGIOS = (
+    "historia", "geograf", "sociales", "humanidades",
+    "spanish", "espanol para extranjeros", "espanol como lengua extranjera",
 )
 
 # Departamentos BOE cuyo cuerpo HTML merece inspección (del BOE del fork).
@@ -486,7 +495,8 @@ PERFIL_DOCENCIA = Profile(
     enricher_allowed_fetch_hosts=_ENRICHER_ALLOWED_FETCH_HOSTS,
     diff_system_prompt=_DIFF_SYSTEM_PROMPT,
     sources_enabled=("boe", "bocm", "profesoresdeele", "todoele", "colejobs", "colegios_es",
-                     "novedades_rrhh", "sap_successfactors"),
+                     "novedades_rrhh", "sap_successfactors",
+                     "workday"),
     # El BOCM del fork es una reescritura RSS → fuente custom que sobrescribe la
     # del core (clave "bocm"). El BOE se reusa del core, parametrizado abajo.
     # profesoresdeele: feed RSS de ofertas ELE (categoría "Ofertas de trabajo").
@@ -516,6 +526,40 @@ PERFIL_DOCENCIA = Profile(
                     "COLEGIOS_RC",
                     "Colegios RC / Highlands",
                     "https://empleo.colegiosrc.es/search/",
+                ),
+            ],
+        },
+        # Lector Workday del núcleo (spec 001, catálogo n.º 6). Ubicación por
+        # las facetas de cada portal: en ISP, por colegios (su región «Madrid»
+        # arrastra Portugal por la oficina de ISP Iberia).
+        "workday": {
+            "portales": [
+                WorkdayPortal(
+                    "CEU_COL", "Colegios CEU",
+                    "https://ceu.wd3.myworkdayjobs.com", "ceu", "COL",
+                    facetas={"locations": [
+                        "d50b4199bc6301ff8c22c848b71837d4",   # Madrid
+                        "d50b4199bc63014ff4e49148b7187bd3",   # Boadilla del Monte
+                    ]},
+                    palabras=_MATERIAS_COLEGIOS,
+                ),
+                WorkdayPortal(
+                    "ISP_MADRID", "ISP (colegios de Madrid)",
+                    "https://internationalschools.wd3.myworkdayjobs.com",
+                    "internationalschools", "ISPCareers",
+                    facetas={"locations": [
+                        "56ca59ea49171001a386c64492b10000",   # Colegio Internacional Aravaca
+                        "56ca59ea49171001a384ad6756a40000",   # Fontenebro School (Moralzarzal)
+                        "56ca59ea49171001a3866f98b0dd0000",   # St. George Madrid
+                    ]},
+                    palabras=_MATERIAS_COLEGIOS,
+                ),
+                WorkdayPortal(
+                    "ISP_ELE", "ISP (profesor de español, cualquier país)",
+                    "https://internationalschools.wd3.myworkdayjobs.com",
+                    "internationalschools", "ISPCareers",
+                    busqueda="Spanish",
+                    palabras=("spanish", "espanol"),
                 ),
             ],
         },
