@@ -17,7 +17,7 @@ Búsqueda a mano (16/10/2026) en webs públicas, sin cuenta y sin esquivar bloqu
 ## Público
 
 Nada de la especialidad se abrió en Madrid en el periodo. Lo que hubo:
-- **Listas extraordinarias de interinos de Madrid**: tres tandas de admitidos (22/09, 29/09, 06/10), sin la 0590-005 ni la 0592-006. **Se publican solo en la sede y en «Novedades de Recursos Humanos» de comunidad.madrid, nunca en el BOCM**: el bot no las vería si fueran de la especialidad. El BOCM solo recoge la convocatoria de cada especialidad nueva (el bot vio y descartó bien la del 02/10).
+- **Listas extraordinarias de interinos de Madrid**: tres tandas de admitidos (22/09, 29/09, 06/10), sin la 0590-005 ni la 0592-006. Los **listados de admitidos** se publican solo en la sede y en «Novedades de Recursos Humanos» de comunidad.madrid; la **convocatoria** de cada especialidad sí sale en el BOCM (el bot vio y descartó bien la del 02/10). *(Corregido en H2: la primera versión decía que nunca pasaban por el BOCM.)*
 - **La lista 0592-006 (Español en EOI) de Madrid sigue abierta permanentemente** desde el 13/11/2024. Se puede pedir hoy.
 - Fulbright lectores de español en EE. UU.: abrió el 10/09 (antes del periodo) y cerró el 14/10; no sale en el BOE.
 - Murcia abrió lista de Geografía e Historia, pero bilingüe en francés.
@@ -64,7 +64,7 @@ Descartadas por ser en inglés (currículo británico) o de otra materia: ISP Ke
 2. **Las candidatas que salen solas**:
    - **Colejobs**: fecha y enlace estables, concentra ofertas de colegios de Madrid.
    - **Colegios.es**: igual, menos volumen y anuncios anónimos.
-   - **Novedades de Recursos Humanos de comunidad.madrid**: listas extraordinarias que no pasan por el BOCM.
+   - **Novedades de Recursos Humanos de comunidad.madrid**: listados de listas extraordinarias y otras novedades que no pasan por el BOCM.
    - **TodoELE**: la referencia de ELE; enlaces estables pero sin fecha de publicación (sí fecha límite).
    - **Jooble (API con clave)**: único sitio donde salen las academias pequeñas de Madrid y los colegios CEU/ISP.
 3. **Caras o imposibles sin clave o navegador**: InfoJobs (la web bloquea; habría que usar su API con clave), Indeed (bloquea), LinkedIn (limita), Jobsora y Jobijoba (anti-robots y fechas que se reindexan), Inspired (necesita navegador), ISP/Workday (error).

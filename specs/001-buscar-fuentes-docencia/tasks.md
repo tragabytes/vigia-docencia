@@ -10,19 +10,19 @@ Spec: [`spec.md`](spec.md). Respuestas de Laureano del 16/10/2026 en la spec.
 - [x] **Parar y validar con Laureano**: validado el 16/10 (mixtas, parte en inglés y ELE en el extranjero valen; respuestas en la spec)
 
 ## H2 · Catálogo comprobado
-Cada candidata se mira hoy contra la web real (sin esquivar bloqueos, sin cuenta) y acaba con veredicto, prueba, valor y coste en `catalogo.md`. Por tandas:
-- [ ] **Agregadores del privado**: Colejobs, Colegios.es, Edutalent, Trabajos.com, ETT con sección de educación, Empléate (SEPE)
-- [ ] **Con clave**: InfoJobs (API), Jooble (API), Indeed (RSS), LinkedIn (búsqueda de invitado). Para cada una: qué clave, cómo se saca, qué volumen da para «profesor historia / secundaria / ELE» en Madrid
-- [ ] **Plataformas de empleo de grupos de colegios**: Inspired, SEK (Teamtailor), Brains (Factorial), Colegios RC / Highlands (SAP SuccessFactors: el núcleo ya tiene una fuente para esa plataforma), y otros grupos de la Comunidad que salgan de H1
-- [ ] **Colegios sin listado de vacantes** (solo «trabaja con nosotros»): ¿merece la pena vigilar cambios en la página?
-- [ ] **ELE**: TodoELE, Hispanismo Cervantes, sede del Instituto Cervantes, Nebrija, International House, academias que salgan de H1
-- [ ] **Online**: academias ELE en remoto (Lingoda y similares); marketplaces de tutores (italki, Preply, Superprof) → *solo recordatorio*
-- [ ] **Público además de BOE/BOCM**: profesorado interino y listas extraordinarias de comunidad.madrid, administracion.gob.es, ayuntamientos (adultos, música): ¿lo cubre ya el BOCM?
-- [ ] **Sindicatos**: canales de Telegram (¿se leen por la versión web pública `t.me/s/…` sin cuenta?), webs de ANPE, CSIF, UGT, CCOO, STEM: ¿traen convocatorias concretas antes que el BOCM?
-- [ ] **Recordatorios**: lectorados y programas con fecha (AECID, Fulbright, auxiliares, Cervantes), PADI, Talento ECM, FSIE
-- [ ] Buscar fuentes nuevas que no estén en el informe (las que salgan de H1 y búsqueda abierta)
-- [ ] Orden de construcción por valor / coste, con las claves que hay que sacar
-- [ ] **Parar y validar con Laureano**: orden de construcción y claves
+Resultado: [`catalogo.md`](catalogo.md) (16/10).
+- [x] Agregadores del privado
+- [x] Con clave: InfoJobs, Jooble, Indeed, LinkedIn (pasos para sacar las claves en el catálogo)
+- [x] Plataformas de empleo de grupos de colegios
+- [x] Colegios sin listado de vacantes (ninguno tiene listado real)
+- [x] ELE
+- [x] Online (marketplaces → recordatorio; Lingoda solo formulario)
+- [x] Público además de BOE/BOCM (→ Novedades de Recursos Humanos)
+- [x] Sindicatos (descartados: van detrás de la Consejería)
+- [x] Recordatorios
+- [x] Fuentes nuevas fuera del informe (TES, Workday CEU/ISP, Cognita, Maristas Ibérica)
+- [x] Orden de construcción por valor / coste
+- [ ] **Parar y validar con Laureano**: orden de construcción, claves (InfoJobs, Jooble, LinkedIn) y límite de gasto de la API
 
 ## H3 · Construir (una fuente por PR, en el orden validado)
 Por cada fuente:
@@ -42,7 +42,7 @@ Cada una lleva, antes de publicar:
 - **Límite de gasto de la API agotado a finales de septiembre** («You have reached your specified API usage limits… 2026-10-01»). Del 22 al 29/09 el enricher no resumió nada: 15 items de docencia y 1 de enfermería siguen sin enriquecer, y por no estar marcados «no relevantes» probablemente llegaron a Telegram sin filtrar. Docencia no tiene workflow de mantenimiento que los reintente. **Afecta a H3**: más fuentes = más llamadas. Pendiente: decidir con Laureano el límite y reintentar esos items.
 
 - **Etiqueta errónea en el perfil**: la watchlist dice «EOI (especialidad 008)», pero en Madrid Español para extranjeros es la **0592-006** (la 008 es Francés). No afecta a la búsqueda (se busca «cuerpo 0592» sin especialidad); sí conviene corregir la etiqueta y mirar si «cuerpo 0592» deja pasar EOI de otros idiomas.
-- **Las listas extraordinarias de interinos de Madrid no pasan por el BOCM**: se publican solo en la sede y en la página de Novedades de Recursos Humanos de comunidad.madrid. Candidata fuerte para H2.
+- **Los listados de las listas extraordinarias de Madrid no pasan por el BOCM** (las convocatorias sí): salen en Novedades de Recursos Humanos de comunidad.madrid. N.º 4 del catálogo.
 
 ## Cierre
 - [ ] Repetir la medida de H1 con las fuentes nuevas: «X de N» antes y después
