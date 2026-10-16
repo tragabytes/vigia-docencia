@@ -22,6 +22,7 @@ from vigia_docencia.sources.bocm import BOCMSource
 from vigia_docencia.sources.colegios_es import ColegiosEsSource
 from vigia_docencia.sources.colejobs import ColejobsSource
 from vigia_docencia.sources.novedades_rrhh import NovedadesRRHHSource
+from vigia_docencia.sources.tes import TesSource
 from vigia_docencia.sources.profesoresdeele import ProfesoresDeEleSource
 from vigia_docencia.sources.todoele import TodoEleSource
 
@@ -424,6 +425,7 @@ _ENRICHER_ALLOWED_FETCH_HOSTS = frozenset({
     "ceu.wd3.myworkdayjobs.com", "internationalschools.wd3.myworkdayjobs.com",
     "jobs.inspirededu.com",
     "empleo.sek.es",
+    "tes.com", "www.tes.com",
     # Ministerio de Educación, FP y Deportes
     "educacionfpydeportes.gob.es", "www.educacionfpydeportes.gob.es",
     "educacion.gob.es", "www.educacion.gob.es",
@@ -499,7 +501,7 @@ PERFIL_DOCENCIA = Profile(
     diff_system_prompt=_DIFF_SYSTEM_PROMPT,
     sources_enabled=("boe", "bocm", "profesoresdeele", "todoele", "colejobs", "colegios_es",
                      "novedades_rrhh", "sap_successfactors",
-                     "workday", "teamtailor"),
+                     "workday", "teamtailor", "tes"),
     # El BOCM del fork es una reescritura RSS → fuente custom que sobrescribe la
     # del core (clave "bocm"). El BOE se reusa del core, parametrizado abajo.
     # profesoresdeele: feed RSS de ofertas ELE (categoría "Ofertas de trabajo").
@@ -510,6 +512,7 @@ PERFIL_DOCENCIA = Profile(
         "colejobs": ColejobsSource,
         "colegios_es": ColegiosEsSource,
         "novedades_rrhh": NovedadesRRHHSource,
+        "tes": TesSource,
     },
     source_params={
         "boe": {
