@@ -31,7 +31,7 @@ Resultado: [`catalogo.md`](catalogo.md) (16/10).
 - [x] 3 Colegios.es — RSS con páginas; Comunidad de Madrid/online y materias; primer día: 1 aviso (Geografía e Historia, Alcalá, 13/10)
 - [x] 4 Novedades de Recursos Humanos (comunidad.madrid) — 10 novedades del perfil desde el 1/9; la fecha va en el título (el listado semanal repite título y enlace)
 - [x] 5 Colegios RC / Highlands (lector SuccessFactors del núcleo) — núcleo v0.11.0 (empresas por perfil) y v0.11.1 (arreglo: el lector filtraba con las palabras de enfermería en silencio); hoy 0 del perfil
-- [ ] 6 Workday: CEU + ISP (núcleo)
+- [x] 6 Workday: CEU + ISP (núcleo v0.12.0) — CEU Madrid/Boadilla, 3 colegios ISP de Madrid y «Spanish teacher» de ISP en el mundo; filtro de materias en la fuente
 - [ ] 7 Inspired (núcleo)
 - [ ] 8 SEK / Teamtailor (núcleo)
 - [ ] 9 TES
