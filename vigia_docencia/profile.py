@@ -421,6 +421,7 @@ _ENRICHER_ALLOWED_FETCH_HOSTS = frozenset({
     "colegios.es", "www.colegios.es",
     "empleo.colegiosrc.es",
     "ceu.wd3.myworkdayjobs.com", "internationalschools.wd3.myworkdayjobs.com",
+    "jobs.inspirededu.com",
     # Ministerio de Educación, FP y Deportes
     "educacionfpydeportes.gob.es", "www.educacionfpydeportes.gob.es",
     "educacion.gob.es", "www.educacion.gob.es",
@@ -526,6 +527,15 @@ PERFIL_DOCENCIA = Profile(
                     "COLEGIOS_RC",
                     "Colegios RC / Highlands",
                     "https://empleo.colegiosrc.es/search/",
+                    palabras=_MATERIAS_COLEGIOS,
+                ),
+                # Inspired (San Patricio, Mirabal, Kensington, King's College,
+                # Ramón y Cajal…), solo sus colegios de Madrid. Catálogo n.º 7.
+                SapEmpresa(
+                    "INSPIRED_MADRID",
+                    "Inspired (colegios de Madrid)",
+                    "https://jobs.inspirededu.com/search/?locationsearch=Madrid",
+                    palabras=_MATERIAS_COLEGIOS + ("history", "geography", "humanities"),
                 ),
             ],
         },
