@@ -2,7 +2,7 @@
 
 Para arrancar una sesión: lee primero el `RELEVO.md` de vigia-core (estado común) y luego esto.
 
-**Estado (16/10/2026).** En producción con vigia-core **v0.14.0** (mira 3 días hacia atrás). Además de BOE, BOCM y ProfesoresdeELE, desde el 16/10 lee **10 fuentes nuevas** (spec 001): TodoELE, Colejobs, Colegios.es, Novedades de RRHH de la Comunidad, Colegios RC e Inspired (SuccessFactors), CEU e ISP (Workday), SEK (Teamtailor), TES e Instituto Cervantes. El alcance del perfil se amplió el 16/10 (regla 1 del `CLAUDE.md`). Detalle y medidas en [`specs/001-buscar-fuentes-docencia/`](specs/001-buscar-fuentes-docencia/).
+**Estado (16/10/2026).** En producción con vigia-core **v0.15.0** (mira 3 días hacia atrás). Además de BOE, BOCM y ProfesoresdeELE, desde el 16/10 lee **10 fuentes nuevas** (spec 001): TodoELE, Colejobs, Colegios.es, Novedades de RRHH de la Comunidad, Colegios RC e Inspired (SuccessFactors), CEU e ISP (Workday), SEK (Teamtailor), TES e Instituto Cervantes. El alcance del perfil se amplió el 16/10 (regla 1 del `CLAUDE.md`). Detalle y medidas en [`specs/001-buscar-fuentes-docencia/`](specs/001-buscar-fuentes-docencia/).
 
 ## Por comprobar
 1. **Primer daily real con las fuentes nuevas (lunes 19/10)**: las 12 fuentes con `0 errores`; el probe de todas en `ok`; avisos del orden de lo simulado (13 el primer día antes del enricher, luego unos 3-5 al día, sobre todo ELE en el extranjero). Cómo mirarlo: `MANTENIMIENTO.md` §3 del núcleo.
