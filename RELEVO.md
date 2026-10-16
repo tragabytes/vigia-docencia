@@ -12,8 +12,6 @@ Para arrancar una sesión: lee primero el `RELEVO.md` de vigia-core (estado com�
 ## Pendientes
 - **Decidir (Laureano): InfoJobs por su API oficial.** Es donde publican muchos colegios (p. ej. Gredos San Diego); la web bloquea. Hace falta que alguien saque una clave en developer.infojobs.net y sus condiciones prohíben guardar sus datos (el bot guardaría solo título y enlace): zona gris. Detalle en `specs/001-buscar-fuentes-docencia/catalogo.md`.
 - **Decidir (Laureano): H4 de la spec 001**, lo que no se puede vigilar: recordatorio de Fulbright (no sale en el BOE; abre a mediados de septiembre), PADI, Talento ECM, bolsa de FSIE. La lista de Español en EOI (0592-006) de Madrid está abierta permanentemente.
-- **Revisar el uso de la API de Anthropic** (modelo del enricher, coste, orquestación) frente a lo que hay hoy (pedido por Laureano el 16/10).
-- **15 items de finales de septiembre sin enriquecer** (el límite de gasto de la API se agotó del 22 al 29/09; Laureano lo ha subido). Docencia no tiene workflow de mantenimiento que los reintente.
 - **Hueco que queda: ELE en Madrid y online.** Las academias pequeñas de Madrid (Aware, Expanish…) y las ofertas online solo aparecían en agregadores (Jobsora, Jooble) o LinkedIn, descartados por anti-robots, falta de clave o condiciones de uso.
 - **TES solo da las 20 más recientes** (la paginación por URL no funciona). Si un día hay más, se perderían; vigilar el volumen.
 - **Descartadas en el catálogo** (no volver a mirarlas sin motivo nuevo): sindicatos (van detrás de la Consejería), Nebrija, International House, Lingoda, FORMESPA, Jobsora/Jobijoba/Edutalent, Indeed, Empléate, Fomento, Talento ECM, colegios sin listado. Jooble y LinkedIn, fuera por decisión del 16/10.
