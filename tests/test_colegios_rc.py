@@ -29,11 +29,11 @@ def test_anuncio_de_historia_de_colegios_rc_llega_y_pasa_el_extractor():
     vacia.raise_for_status = lambda: None
 
     def get(url, **kw):
-        return llena if "startrow=0" in url else vacia
+        return llena if "colegiosrc.es" in url and "startrow=0" in url else vacia
 
-    with patch.object(sap_successfactors.requests, "get", side_effect=get) as g:
+    with patch.object(sap_successfactors.requests, "get", side_effect=get):
         items = SapSuccessfactorsSource().fetch(since_date=date(2026, 10, 1))
 
-    assert all("colegiosrc.es" in c.args[0] for c in g.call_args_list)
-    assert [i.title for i in items] == ["DOCENTE DE GEOGRAFÍA E HISTORIA EN SECUNDARIA"]
-    assert extract(items[0]) is not None
+    rc = [i for i in items if i.extra["empresa"] == "COLEGIOS_RC"]
+    assert [i.title for i in rc] == ["DOCENTE DE GEOGRAFÍA E HISTORIA EN SECUNDARIA"]
+    assert extract(rc[0]) is not None
