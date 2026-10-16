@@ -476,6 +476,9 @@ PERFIL_DOCENCIA = Profile(
             "fetch_pdfs": False,   # el BOE docente no baja anexos PDF (igual que el fork)
             "timeout_api": 45,
             "timeout_body": 30,
+            # vigia-core v0.10.0 abre las convocatorias de personal no docente
+            # de universidades; este perfil excluye la universidad (salvo ELE).
+            "univ_staff_title_keywords": (),
         },
     },
     valid_process_types=(

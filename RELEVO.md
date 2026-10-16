@@ -2,7 +2,7 @@
 
 Para arrancar una sesión: lee primero el `RELEVO.md` de vigia-core (estado común) y luego esto.
 
-**Estado (14/10/2026).** En producción con vigia-core **v0.9.0** (mira 3 días hacia atrás). Vigila BOE y BOCM (oposiciones e interinidades de secundaria, 0590/005 y 0592) y ProfesoresdeELE (ofertas ELE). Dailies en verde del 1 al 14/10; el enricher descartó como falsos positivos entre 2 y 8 items algunos días, y no salió ningún aviso nuevo.
+**Estado (14/10/2026).** En producción con vigia-core **v0.10.0** (mira 3 días hacia atrás). Vigila BOE y BOCM (oposiciones e interinidades de secundaria, 0590/005 y 0592) y ProfesoresdeELE (ofertas ELE). Dailies en verde del 1 al 14/10; el enricher descartó como falsos positivos entre 2 y 8 items algunos días, y no salió ningún aviso nuevo.
 
 ## Fuentes que faltan
 
