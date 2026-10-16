@@ -19,6 +19,7 @@ from vigia.sources.sap_successfactors import SapEmpresa
 from vigia.sources.teamtailor import TeamtailorPortal
 from vigia.sources.workday import WorkdayPortal
 from vigia_docencia.sources.bocm import BOCMSource
+from vigia_docencia.sources.cervantes import CervantesSource
 from vigia_docencia.sources.colegios_es import ColegiosEsSource
 from vigia_docencia.sources.colejobs import ColejobsSource
 from vigia_docencia.sources.novedades_rrhh import NovedadesRRHHSource
@@ -501,7 +502,7 @@ PERFIL_DOCENCIA = Profile(
     diff_system_prompt=_DIFF_SYSTEM_PROMPT,
     sources_enabled=("boe", "bocm", "profesoresdeele", "todoele", "colejobs", "colegios_es",
                      "novedades_rrhh", "sap_successfactors",
-                     "workday", "teamtailor", "tes"),
+                     "workday", "teamtailor", "tes", "cervantes"),
     # El BOCM del fork es una reescritura RSS → fuente custom que sobrescribe la
     # del core (clave "bocm"). El BOE se reusa del core, parametrizado abajo.
     # profesoresdeele: feed RSS de ofertas ELE (categoría "Ofertas de trabajo").
@@ -513,6 +514,7 @@ PERFIL_DOCENCIA = Profile(
         "colegios_es": ColegiosEsSource,
         "novedades_rrhh": NovedadesRRHHSource,
         "tes": TesSource,
+        "cervantes": CervantesSource,
     },
     source_params={
         "boe": {
