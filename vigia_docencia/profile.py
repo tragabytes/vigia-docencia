@@ -15,6 +15,7 @@ universidad en contexto ELE) y roles 100% en inglés.
 from __future__ import annotations
 
 from vigia.profile import Profile
+from vigia.sources.sap_successfactors import SapEmpresa
 from vigia_docencia.sources.bocm import BOCMSource
 from vigia_docencia.sources.colegios_es import ColegiosEsSource
 from vigia_docencia.sources.colejobs import ColejobsSource
@@ -417,6 +418,7 @@ _ENRICHER_ALLOWED_FETCH_HOSTS = frozenset({
     "todoele.net", "www.todoele.net",
     "colejobs.es", "www.colejobs.es",
     "colegios.es", "www.colegios.es",
+    "empleo.colegiosrc.es",
     # Ministerio de Educación, FP y Deportes
     "educacionfpydeportes.gob.es", "www.educacionfpydeportes.gob.es",
     "educacion.gob.es", "www.educacion.gob.es",
@@ -484,7 +486,7 @@ PERFIL_DOCENCIA = Profile(
     enricher_allowed_fetch_hosts=_ENRICHER_ALLOWED_FETCH_HOSTS,
     diff_system_prompt=_DIFF_SYSTEM_PROMPT,
     sources_enabled=("boe", "bocm", "profesoresdeele", "todoele", "colejobs", "colegios_es",
-                     "novedades_rrhh"),
+                     "novedades_rrhh", "sap_successfactors"),
     # El BOCM del fork es una reescritura RSS → fuente custom que sobrescribe la
     # del core (clave "bocm"). El BOE se reusa del core, parametrizado abajo.
     # profesoresdeele: feed RSS de ofertas ELE (categoría "Ofertas de trabajo").
@@ -505,6 +507,17 @@ PERFIL_DOCENCIA = Profile(
             # vigia-core v0.10.0 abre las convocatorias de personal no docente
             # de universidades; este perfil excluye la universidad (salvo ELE).
             "univ_staff_title_keywords": (),
+        },
+        # Lector SuccessFactors del núcleo con los colegios que lo usan
+        # (spec 001, catálogo n.º 5).
+        "sap_successfactors": {
+            "empresas": [
+                SapEmpresa(
+                    "COLEGIOS_RC",
+                    "Colegios RC / Highlands",
+                    "https://empleo.colegiosrc.es/search/",
+                ),
+            ],
         },
     },
     valid_process_types=(
