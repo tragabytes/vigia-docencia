@@ -18,6 +18,7 @@ from vigia.profile import Profile
 from vigia_docencia.sources.bocm import BOCMSource
 from vigia_docencia.sources.colegios_es import ColegiosEsSource
 from vigia_docencia.sources.colejobs import ColejobsSource
+from vigia_docencia.sources.novedades_rrhh import NovedadesRRHHSource
 from vigia_docencia.sources.profesoresdeele import ProfesoresDeEleSource
 from vigia_docencia.sources.todoele import TodoEleSource
 
@@ -482,7 +483,8 @@ PERFIL_DOCENCIA = Profile(
     enricher_snippet_keywords_low=tuple(_ENRICHER_SNIPPET_KEYWORDS_LOW),
     enricher_allowed_fetch_hosts=_ENRICHER_ALLOWED_FETCH_HOSTS,
     diff_system_prompt=_DIFF_SYSTEM_PROMPT,
-    sources_enabled=("boe", "bocm", "profesoresdeele", "todoele", "colejobs", "colegios_es"),
+    sources_enabled=("boe", "bocm", "profesoresdeele", "todoele", "colejobs", "colegios_es",
+                     "novedades_rrhh"),
     # El BOCM del fork es una reescritura RSS → fuente custom que sobrescribe la
     # del core (clave "bocm"). El BOE se reusa del core, parametrizado abajo.
     # profesoresdeele: feed RSS de ofertas ELE (categoría "Ofertas de trabajo").
@@ -492,6 +494,7 @@ PERFIL_DOCENCIA = Profile(
         "todoele": TodoEleSource,
         "colejobs": ColejobsSource,
         "colegios_es": ColegiosEsSource,
+        "novedades_rrhh": NovedadesRRHHSource,
     },
     source_params={
         "boe": {
