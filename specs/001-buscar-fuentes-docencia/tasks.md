@@ -35,7 +35,7 @@ Resultado: [`catalogo.md`](catalogo.md) (16/10).
 - [x] 7 Inspired (núcleo v0.13.0: búsqueda en la URL y palabras por empresa) — solo colegios de Madrid; la búsqueda por palabra de SuccessFactors es amplia y no sirve para ELE; hoy 0 del perfil
 - [x] 8 SEK / Teamtailor (núcleo v0.14.0) — colegios de Madrid por materias y «Spanish teacher» en cualquier país; primer día: 1 aviso (Spanish Teacher, Arabia Saudí, 14/10)
 - [x] 9 TES — 20 más recientes por fecha (la paginación por URL no funciona); ~3 ofertas de español al día; primer día: 9 avisos
-- [ ] 10 Instituto Cervantes
+- [x] 10 Instituto Cervantes — convocatorias públicas de profesores; fecha de la ficha (el listado conserva las viejas); primer día: 0
 
 Por cada fuente:
 
