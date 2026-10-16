@@ -4,6 +4,8 @@ Para arrancar una sesión: lee primero el `RELEVO.md` de vigia-core (estado com�
 
 **Estado (14/10/2026).** En producción con vigia-core **v0.10.0** (mira 3 días hacia atrás). Vigila BOE y BOCM (oposiciones e interinidades de secundaria, 0590/005 y 0592) y ProfesoresdeELE (ofertas ELE). Dailies en verde del 1 al 14/10; el enricher descartó como falsos positivos entre 2 y 8 items algunos días, y no salió ningún aviso nuevo.
 
+**Después de la spec 001 (pedido por Laureano, 16/10):** revisar el uso de la API de Anthropic (modelo del enricher, coste, orquestación) frente a lo que hay disponible hoy.
+
 **En marcha:** buscar y construir fuentes nuevas → [`specs/001-buscar-fuentes-docencia/`](specs/001-buscar-fuentes-docencia/tasks.md). La lista de abajo es la de partida; el catálogo de esa spec la sustituye cuando esté.
 
 **Pendiente de decidir (Laureano):** InfoJobs por su API oficial. Es donde publican muchos colegios (p. ej. Gredos San Diego); la web bloquea. Hace falta que alguien saque una clave en developer.infojobs.net y sus condiciones prohíben guardar sus datos (el bot guardaría solo título y enlace): zona gris. Detalle en `specs/001-buscar-fuentes-docencia/catalogo.md`.

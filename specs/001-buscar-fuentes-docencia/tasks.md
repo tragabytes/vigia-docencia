@@ -30,7 +30,7 @@ Resultado: [`catalogo.md`](catalogo.md) (16/10).
 - [x] 2 Colejobs — filtra Comunidad de Madrid/online y materias del perfil; primer día: 0 avisos (simulado); 82 ofertas leídas
 - [x] 3 Colegios.es — RSS con páginas; Comunidad de Madrid/online y materias; primer día: 1 aviso (Geografía e Historia, Alcalá, 13/10)
 - [x] 4 Novedades de Recursos Humanos (comunidad.madrid) — 10 novedades del perfil desde el 1/9; la fecha va en el título (el listado semanal repite título y enlace)
-- [ ] 5 Colegios RC / Highlands (lector SuccessFactors del núcleo)
+- [x] 5 Colegios RC / Highlands (lector SuccessFactors del núcleo) — núcleo v0.11.0 (empresas por perfil) y v0.11.1 (arreglo: el lector filtraba con las palabras de enfermería en silencio); hoy 0 del perfil
 - [ ] 6 Workday: CEU + ISP (núcleo)
 - [ ] 7 Inspired (núcleo)
 - [ ] 8 SEK / Teamtailor (núcleo)
