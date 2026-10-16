@@ -1,0 +1,95 @@
+name: weekly-health-agent
+
+# Agente Claude semanal para las fuentes PROPIAS de docencia (las de
+# `vigia_docencia/sources/`). Las fuentes del núcleo (BOE, SuccessFactors,
+# Workday, Teamtailor…) las revisa el agente de vigia-core. Si una fuente propia
+# está rota por selector/parser (no un timeout pasajero), la corrige y abre un
+# PR en este repo. NUNCA fusiona ni empuja a main.
+#
+# Spec 002 del núcleo, H3. Requisito: el secret ANTHROPIC_API_KEY (el mismo que
+# usa el enricher del daily).
+
+on:
+  schedule:
+    - cron: '30 9 * * 1'     # Lunes 09:30 UTC, después del agente del núcleo
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-health-agent
+  cancel-in-progress: false
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar vigia-docencia
+        uses: actions/checkout@v5
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Agente de salud (triage + PR de fix)
+        uses: anthropics/claude-code-action@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          claude_args: '--max-turns 80 --model claude-sonnet-5-5 --allowedTools Read,Edit,Write,Glob,Grep,Bash,WebFetch'
+          prompt: |
+            Eres el agente semanal de salud de las fuentes PROPIAS del bot
+            "vigia-docencia". Estás en un checkout de `tragabytes/vigia-docencia`.
+            Lee su CLAUDE.md y el CLAUDE.md del núcleo
+            (https://github.com/tragabytes/vigia-core/blob/main/CLAUDE.md) y
+            respétalos: cambios quirúrgicos, no romper tests. Tu objetivo:
+            detectar fuentes propias ROTAS por selector/parser y abrir UN PR de
+            fix por fuente. NO toques timeouts pasajeros.
+
+            ## 1. Qué fuentes son tuyas
+            Solo las de `vigia_docencia/sources/` (hoy: todoele, colejobs,
+            colegios_es, novedades_rrhh, tes, cervantes, bocm,
+            profesoresdeele). Las demás (boe, sap_successfactors, workday,
+            teamtailor…) son del núcleo y las revisa su propio agente: ignóralas.
+
+            ## 2. Lee el estado
+            - Probe del bot (público):
+              https://raw.githubusercontent.com/tragabytes/vigia-docencia/gh-pages/data/sources_status.json
+              (name, status, code, detail, url).
+            - Último daily (probe ≠ runtime: un probe en verde puede esconder
+              pérdidas):
+              `gh run list --workflow daily.yml -L 1 --json databaseId` y
+              `gh run view <id> --log | grep -E "errores|WARNING"`.
+
+            ## 3. Clasifica
+            - ACCIONABLE: el probe dice "el selector no devolvió elementos" o
+              da 404/410, o la fuente da 0 ofertas con errores de parseo
+              repetidos en el log.
+            - IGNORAR: timeouts, "Max retries", "Connection", 5xx puntuales.
+            Si no hay nada accionable, NO cambies nada: termina diciendo "sin
+            roturas de parser esta semana". No abras PRs vacíos.
+
+            ## 4. Para CADA fuente accionable
+            a. Abre `vigia_docencia/sources/<fuente>.py` (su cabecera explica la
+               estructura de la web) y su test `tests/test_<fuente>.py`.
+            b. Descarga la página en vivo (requests + BeautifulSoup 'lxml') y
+               encuentra la estructura actual. No esquives bloqueos anti-robots
+               ni captchas: si la web bloquea, no es un fallo de parser.
+            c. Cambio MÍNIMO en la fuente; mantén coherente su
+               `probe_content_count()`. Actualiza el fixture del test con la
+               estructura nueva.
+            d. Tests en verde:
+               `pip install -r requirements.txt && PYTHONIOENCODING=utf-8 python -m pytest tests -q --capture=no`.
+            e. PR a `main` desde la rama `fix/health-<fuente>` con: qué cambió
+               en la web, el fix y la confirmación de los tests.
+
+            ## 5. Reglas duras
+            - NUNCA fusiones ni empujes a `main`. Solo ramas + PRs.
+            - Un PR por fuente. Si dudas si es pasajero, NO abras PR.
+            - No toques `vigia-core` ni el perfil (`vigia_docencia/profile.py`)
+              salvo que el fix de la fuente lo exija y lo expliques en el PR.
