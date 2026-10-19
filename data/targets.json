@@ -3,7 +3,7 @@
     "id": "T-01",
     "name": "Consejería de Educación CM",
     "desc": "Comunidad de Madrid — Consejería de Educación, Ciencia y Universidades",
-    "hits": 10,
+    "hits": 5,
     "active": true,
     "nearest_deadline": null,
     "days_until": null,
@@ -14,22 +14,17 @@
       "bd142fa527600138",
       "6756ab39702efa41",
       "deb0ee978dca3fec",
-      "7fabc1a2ba299eaf",
-      "0269633638fc77d3",
-      "829f13ccf924bf82",
-      "6fbb5bb243d22bdd",
-      "ddd87b96e7ec98ab",
-      "59c2a29a664770d1"
+      "7fabc1a2ba299eaf"
     ]
   },
   {
     "id": "T-02",
     "name": "Ministerio de Educación",
     "desc": "Ministerio de Educación, Formación Profesional y Deportes (MEFD)",
-    "hits": 5,
+    "hits": 6,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 41,
+    "days_until": 38,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -37,6 +32,7 @@
       "5df72b4108ec6a17",
       "78aeed9647197432",
       "c3fa8125fe81c8de",
+      "7fdc17b50032c3db",
       "feabc1e0051e765b"
     ]
   },
@@ -93,11 +89,11 @@
   {
     "id": "T-07",
     "name": "EOI Madrid",
-    "desc": "Escuelas Oficiales de Idiomas (especialidad 008)",
-    "hits": 8,
+    "desc": "Escuelas Oficiales de Idiomas (Español para extranjeros, especialidad 006)",
+    "hits": 7,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 41,
+    "days_until": 38,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -106,7 +102,6 @@
       "deb0ee978dca3fec",
       "c3fa8125fe81c8de",
       "7fabc1a2ba299eaf",
-      "0269633638fc77d3",
       "7fdc17b50032c3db",
       "feabc1e0051e765b"
     ]
@@ -175,13 +170,15 @@
     "id": "T-13",
     "name": "SEK Group",
     "desc": "SEK Education — El Castillo, Ciudalcampo, UCJC",
-    "hits": 0,
-    "active": false,
+    "hits": 1,
+    "active": true,
     "nearest_deadline": null,
     "days_until": null,
     "urgent": false,
-    "latest_phase": null,
-    "item_ids": []
+    "latest_phase": "convocatoria",
+    "item_ids": [
+      "1de9382370e079e1"
+    ]
   },
   {
     "id": "T-14",

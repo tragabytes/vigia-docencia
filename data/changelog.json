@@ -1,34 +1,34 @@
 [
   {
     "date": "2026-10-16",
-    "commit": "75b27e2",
-    "kind": "ci",
-    "scope": "",
-    "title": "checkout@v5 y setup-python@v6 (Node 24)",
-    "body": "Solo cambian el runtime a Node 24; la persistencia de credenciales que usa"
-  },
-  {
-    "date": "2026-10-14",
-    "commit": "64485fa",
-    "kind": "fix",
-    "scope": "web",
-    "title": "etiqueta del modelo para enriched_version >= 2",
-    "body": "El dashboard solo reconocía las versiones 1 y 2 del enricher; con la 6"
-  },
-  {
-    "date": "2026-06-02",
-    "commit": "69c49d8",
-    "kind": "fix",
-    "scope": "enricher",
-    "title": "no geo-restringir a Madrid las ofertas ELE/lectorado (#4)",
-    "body": "El backfill real de ProfesoresdeELE destapó un falso negativo: el enricher marcó"
-  },
-  {
-    "date": "2026-06-02",
-    "commit": "4ff2e19",
+    "commit": "b75bf41",
     "kind": "feat",
-    "scope": "fuente",
-    "title": "ProfesoresdeELE — ofertas ELE vía RSS de categoría (#2)",
-    "body": "Primera fuente de la fase de ampliación (ROADMAP, 1 fuente/PR). Añade el feed"
+    "scope": "",
+    "title": "prueba de Haiku 5.5 con Sonnet 4.6 de testigo; ELE explícito para Spanish teacher",
+    "body": ""
+  },
+  {
+    "date": "2026-10-16",
+    "commit": "184cd28",
+    "kind": "fix",
+    "scope": "ci",
+    "title": "informe del agente de salud con display_report",
+    "body": ""
+  },
+  {
+    "date": "2026-10-16",
+    "commit": "bb2cc4b",
+    "kind": "feat",
+    "scope": "ci",
+    "title": "el agente de salud deja su conclusión en la página del run",
+    "body": ""
+  },
+  {
+    "date": "2026-10-16",
+    "commit": "e6b91d6",
+    "kind": "feat",
+    "scope": "ci",
+    "title": "agente semanal de salud para las fuentes propias de docencia",
+    "body": "Spec 002 del núcleo, H3: 6 de las 10 fuentes nuevas viven aquí y el agente del"
   }
 ]

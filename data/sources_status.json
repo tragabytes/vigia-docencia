@@ -5,7 +5,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-16T12:48:42.417539+00:00",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
     "total_hits": 56
   },
   {
@@ -14,8 +14,44 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-16T12:48:42.417539+00:00",
-    "total_hits": 254
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "total_hits": 257
+  },
+  {
+    "name": "cervantes",
+    "url": "https://cervantes.sede.gob.es/es/procedimientos",
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "total_hits": 0
+  },
+  {
+    "name": "colegios_es",
+    "url": "https://colegios.es/empleoprofesores/feed/",
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "total_hits": 0
+  },
+  {
+    "name": "colejobs",
+    "url": "https://www.colejobs.es/ofertas-de-empleo/",
+    "status": "error",
+    "code": 403,
+    "detail": "Forbidden",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "total_hits": 0
+  },
+  {
+    "name": "novedades_rrhh",
+    "url": "https://www.comunidad.madrid/educacion/novedades-direccion-general-recursos-humanos",
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "total_hits": 0
   },
   {
     "name": "profesoresdeele",
@@ -23,7 +59,52 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-16T12:48:42.417539+00:00",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
     "total_hits": 6
+  },
+  {
+    "name": "sap_successfactors",
+    "url": "https://empleo.renfe.com/search/",
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "total_hits": 0
+  },
+  {
+    "name": "teamtailor",
+    "url": "https://empleo.sek.es/jobs.rss",
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "total_hits": 1
+  },
+  {
+    "name": "tes",
+    "url": "https://www.tes.com/jobs/search?keywords=spanish%20teacher&sort=date",
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "total_hits": 12
+  },
+  {
+    "name": "todoele",
+    "url": "https://todoele.net/ofertas-trabajo",
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "total_hits": 22
+  },
+  {
+    "name": "workday",
+    "url": "https://ceu.wd3.myworkdayjobs.com",
+    "status": "error",
+    "code": 406,
+    "detail": "Not Acceptable",
+    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "total_hits": 0
   }
 ]
