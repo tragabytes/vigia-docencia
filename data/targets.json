@@ -24,7 +24,7 @@
     "hits": 6,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 38,
+    "days_until": 37,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -93,7 +93,7 @@
     "hits": 7,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 38,
+    "days_until": 37,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [

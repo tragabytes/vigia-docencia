@@ -5,7 +5,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
     "total_hits": 56
   },
   {
@@ -14,8 +14,8 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
-    "total_hits": 257
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
+    "total_hits": 258
   },
   {
     "name": "cervantes",
@@ -23,7 +23,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
     "total_hits": 0
   },
   {
@@ -32,7 +32,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
     "total_hits": 0
   },
   {
@@ -41,7 +41,7 @@
     "status": "error",
     "code": 403,
     "detail": "Forbidden",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
     "total_hits": 0
   },
   {
@@ -50,7 +50,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
     "total_hits": 0
   },
   {
@@ -59,7 +59,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
     "total_hits": 6
   },
   {
@@ -68,7 +68,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
     "total_hits": 0
   },
   {
@@ -77,7 +77,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
     "total_hits": 1
   },
   {
@@ -86,8 +86,8 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
-    "total_hits": 12
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
+    "total_hits": 15
   },
   {
     "name": "todoele",
@@ -95,16 +95,16 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
-    "total_hits": 22
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
+    "total_hits": 26
   },
   {
     "name": "workday",
-    "url": "https://ceu.wd3.myworkdayjobs.com",
-    "status": "error",
-    "code": 406,
-    "detail": "Not Acceptable",
-    "last_probe_at": "2026-10-19T15:20:08.843286+00:00",
+    "url": "https://ceu.wd3.myworkdayjobs.com/COL",
+    "status": "ok",
+    "code": 200,
+    "detail": "",
+    "last_probe_at": "2026-10-20T13:08:19.561518+00:00",
     "total_hits": 0
   }
 ]
