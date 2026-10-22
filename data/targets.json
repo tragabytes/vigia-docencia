@@ -3,19 +3,21 @@
     "id": "T-01",
     "name": "Consejería de Educación CM",
     "desc": "Comunidad de Madrid — Consejería de Educación, Ciencia y Universidades",
-    "hits": 6,
+    "hits": 8,
     "active": true,
     "nearest_deadline": null,
     "days_until": null,
     "urgent": false,
-    "latest_phase": "admitidos_provisional",
+    "latest_phase": "otro",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
       "6756ab39702efa41",
       "deb0ee978dca3fec",
       "7fabc1a2ba299eaf",
-      "d3be30270e86f57e"
+      "d3be30270e86f57e",
+      "9fbba0df4a07480d",
+      "c7d75edca8d22cb6"
     ]
   },
   {
@@ -25,7 +27,7 @@
     "hits": 6,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 36,
+    "days_until": 35,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -91,12 +93,12 @@
     "id": "T-07",
     "name": "EOI Madrid",
     "desc": "Escuelas Oficiales de Idiomas (Español para extranjeros, especialidad 006)",
-    "hits": 8,
+    "hits": 10,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 36,
+    "days_until": 35,
     "urgent": false,
-    "latest_phase": "admitidos_provisional",
+    "latest_phase": "otro",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
@@ -105,7 +107,9 @@
       "7fabc1a2ba299eaf",
       "7fdc17b50032c3db",
       "feabc1e0051e765b",
-      "d3be30270e86f57e"
+      "d3be30270e86f57e",
+      "9fbba0df4a07480d",
+      "c7d75edca8d22cb6"
     ]
   },
   {
