@@ -3,12 +3,12 @@
     "id": "T-01",
     "name": "Consejería de Educación CM",
     "desc": "Comunidad de Madrid — Consejería de Educación, Ciencia y Universidades",
-    "hits": 10,
+    "hits": 11,
     "active": true,
     "nearest_deadline": null,
     "days_until": null,
     "urgent": false,
-    "latest_phase": "admitidos_provisional",
+    "latest_phase": "propuesta_nombramiento",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
@@ -19,26 +19,28 @@
       "9fbba0df4a07480d",
       "c7d75edca8d22cb6",
       "3233cd880bdd2429",
-      "1a8e4ebaccc1b6ba"
+      "1a8e4ebaccc1b6ba",
+      "b4d887dff0016d9a"
     ]
   },
   {
     "id": "T-02",
     "name": "Ministerio de Educación",
     "desc": "Ministerio de Educación, Formación Profesional y Deportes (MEFD)",
-    "hits": 6,
+    "hits": 7,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 27,
+    "days_until": 24,
     "urgent": false,
-    "latest_phase": "convocatoria",
+    "latest_phase": "propuesta_nombramiento",
     "item_ids": [
       "2f41268b400189b1",
       "5df72b4108ec6a17",
       "78aeed9647197432",
       "c3fa8125fe81c8de",
       "7fdc17b50032c3db",
-      "feabc1e0051e765b"
+      "feabc1e0051e765b",
+      "b4d887dff0016d9a"
     ]
   },
   {
@@ -95,12 +97,12 @@
     "id": "T-07",
     "name": "EOI Madrid",
     "desc": "Escuelas Oficiales de Idiomas (Español para extranjeros, especialidad 006)",
-    "hits": 11,
+    "hits": 13,
     "active": true,
-    "nearest_deadline": "2026-11-26",
-    "days_until": 27,
+    "nearest_deadline": "2026-11-16",
+    "days_until": 14,
     "urgent": false,
-    "latest_phase": "admitidos_provisional",
+    "latest_phase": "propuesta_nombramiento",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
@@ -112,7 +114,9 @@
       "d3be30270e86f57e",
       "9fbba0df4a07480d",
       "c7d75edca8d22cb6",
-      "3233cd880bdd2429"
+      "3233cd880bdd2429",
+      "81f2e261e5870d3f",
+      "b4d887dff0016d9a"
     ]
   },
   {
@@ -167,14 +171,15 @@
     "id": "T-12",
     "name": "Inspired Education",
     "desc": "Inspired Education — Mirabal, Kensington, King's, San Patricio, Everest",
-    "hits": 1,
+    "hits": 2,
     "active": true,
     "nearest_deadline": "2026-11-08",
-    "days_until": 9,
-    "urgent": false,
+    "days_until": 6,
+    "urgent": true,
     "latest_phase": "convocatoria",
     "item_ids": [
-      "339748dbe4244718"
+      "339748dbe4244718",
+      "e5dde3eb4590287e"
     ]
   },
   {
