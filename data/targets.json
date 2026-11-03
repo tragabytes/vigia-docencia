@@ -30,7 +30,7 @@
     "hits": 7,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 24,
+    "days_until": 23,
     "urgent": false,
     "latest_phase": "propuesta_nombramiento",
     "item_ids": [
@@ -100,7 +100,7 @@
     "hits": 13,
     "active": true,
     "nearest_deadline": "2026-11-16",
-    "days_until": 14,
+    "days_until": 13,
     "urgent": false,
     "latest_phase": "propuesta_nombramiento",
     "item_ids": [
@@ -174,7 +174,7 @@
     "hits": 2,
     "active": true,
     "nearest_deadline": "2026-11-08",
-    "days_until": 6,
+    "days_until": 5,
     "urgent": true,
     "latest_phase": "convocatoria",
     "item_ids": [
