@@ -3,12 +3,12 @@
     "id": "T-01",
     "name": "Consejería de Educación CM",
     "desc": "Comunidad de Madrid — Consejería de Educación, Ciencia y Universidades",
-    "hits": 26,
+    "hits": 27,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 21,
+    "days_until": 20,
     "urgent": false,
-    "latest_phase": "admitidos_provisional",
+    "latest_phase": "otro",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
@@ -35,7 +35,8 @@
       "30ee1d04703529a6",
       "0e133502afee61a0",
       "5816fbfd5f67fabd",
-      "9dc6ddc3f23cacc6"
+      "9dc6ddc3f23cacc6",
+      "384154df698ee320"
     ]
   },
   {
@@ -45,7 +46,7 @@
     "hits": 8,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 21,
+    "days_until": 20,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -113,12 +114,12 @@
     "id": "T-07",
     "name": "EOI Madrid",
     "desc": "Escuelas Oficiales de Idiomas (Español para extranjeros, especialidad 006)",
-    "hits": 29,
+    "hits": 30,
     "active": true,
     "nearest_deadline": "2026-11-16",
-    "days_until": 11,
+    "days_until": 10,
     "urgent": false,
-    "latest_phase": "admitidos_provisional",
+    "latest_phase": "otro",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
@@ -148,7 +149,8 @@
       "30ee1d04703529a6",
       "0e133502afee61a0",
       "5816fbfd5f67fabd",
-      "9dc6ddc3f23cacc6"
+      "9dc6ddc3f23cacc6",
+      "384154df698ee320"
     ]
   },
   {
@@ -203,15 +205,16 @@
     "id": "T-12",
     "name": "Inspired Education",
     "desc": "Inspired Education — Mirabal, Kensington, King's, San Patricio, Everest",
-    "hits": 2,
+    "hits": 3,
     "active": true,
     "nearest_deadline": "2026-11-08",
-    "days_until": 3,
+    "days_until": 2,
     "urgent": true,
     "latest_phase": "convocatoria",
     "item_ids": [
       "339748dbe4244718",
-      "e5dde3eb4590287e"
+      "e5dde3eb4590287e",
+      "527c069ae99354bb"
     ]
   },
   {
