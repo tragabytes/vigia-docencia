@@ -500,9 +500,11 @@ PERFIL_DOCENCIA = Profile(
     enricher_snippet_keywords_low=tuple(_ENRICHER_SNIPPET_KEYWORDS_LOW),
     enricher_allowed_fetch_hosts=_ENRICHER_ALLOWED_FETCH_HOSTS,
     diff_system_prompt=_DIFF_SYSTEM_PROMPT,
-    sources_enabled=("boe", "bocm", "profesoresdeele", "todoele", "colejobs", "colegios_es",
+    sources_enabled=("boe", "bocm", "profesoresdeele", "todoele", "colegios_es",
                      "novedades_rrhh", "sap_successfactors",
                      "workday", "teamtailor", "tes", "cervantes"),
+    # Colejobs sigue registrada abajo pero desactivada (19/10/2026: Cloudflare
+    # da 403 a los servidores de GitHub). Para reactivarla, añadir "colejobs".
     # El BOCM del fork es una reescritura RSS → fuente custom que sobrescribe la
     # del core (clave "bocm"). El BOE se reusa del core, parametrizado abajo.
     # profesoresdeele: feed RSS de ofertas ELE (categoría "Ofertas de trabajo").
