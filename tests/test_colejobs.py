@@ -104,3 +104,14 @@ def test_probe_da_cero_si_cambia_la_estructura():
     resp.raise_for_status = lambda: None
     with patch("vigia.sources.base.requests.get", return_value=resp):
         assert ColejobsSource().probe_content_count() == 0
+
+
+def test_colejobs_esta_registrada_pero_no_activa():
+    """Daily del 19/10/2026: Cloudflare da 403 a los servidores de GitHub y la
+    fuente no lee nada, con la issue de salud abierta cada día. Laureano la
+    desactivó (opción A): la fuente y sus tests se quedan para reactivarla,
+    pero no debe estar en `sources_enabled`."""
+    from vigia_docencia.profile import PERFIL_DOCENCIA
+
+    assert "colejobs" not in PERFIL_DOCENCIA.sources_enabled
+    assert PERFIL_DOCENCIA.extra_sources["colejobs"] is ColejobsSource
