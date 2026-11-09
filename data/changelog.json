@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-06",
+    "commit": "99ff944",
+    "kind": "fix",
+    "scope": "",
+    "title": "desactivar Colejobs (Cloudflare bloquea los servidores de GitHub)",
+    "body": "Laureano eligió la opción A el 6/11. Se quita de sources_enabled; la fuente"
+  },
+  {
     "date": "2026-10-16",
     "commit": "b75bf41",
     "kind": "feat",
@@ -22,13 +30,5 @@
     "scope": "ci",
     "title": "el agente de salud deja su conclusión en la página del run",
     "body": ""
-  },
-  {
-    "date": "2026-10-16",
-    "commit": "e6b91d6",
-    "kind": "feat",
-    "scope": "ci",
-    "title": "agente semanal de salud para las fuentes propias de docencia",
-    "body": "Spec 002 del núcleo, H3: 6 de las 10 fuentes nuevas viven aquí y el agente del"
   }
 ]

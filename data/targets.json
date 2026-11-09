@@ -6,7 +6,7 @@
     "hits": 27,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 20,
+    "days_until": 17,
     "urgent": false,
     "latest_phase": "otro",
     "item_ids": [
@@ -46,7 +46,7 @@
     "hits": 8,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 20,
+    "days_until": 17,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -117,8 +117,8 @@
     "hits": 30,
     "active": true,
     "nearest_deadline": "2026-11-16",
-    "days_until": 10,
-    "urgent": false,
+    "days_until": 7,
+    "urgent": true,
     "latest_phase": "otro",
     "item_ids": [
       "e473d71ab78a71e4",
@@ -207,9 +207,9 @@
     "desc": "Inspired Education — Mirabal, Kensington, King's, San Patricio, Everest",
     "hits": 3,
     "active": true,
-    "nearest_deadline": "2026-11-08",
-    "days_until": 2,
-    "urgent": true,
+    "nearest_deadline": "2027-02-01",
+    "days_until": 84,
+    "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
       "339748dbe4244718",
