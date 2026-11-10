@@ -6,7 +6,7 @@
     "hits": 27,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 17,
+    "days_until": 16,
     "urgent": false,
     "latest_phase": "otro",
     "item_ids": [
@@ -46,7 +46,7 @@
     "hits": 8,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 17,
+    "days_until": 16,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -117,7 +117,7 @@
     "hits": 30,
     "active": true,
     "nearest_deadline": "2026-11-16",
-    "days_until": 7,
+    "days_until": 6,
     "urgent": true,
     "latest_phase": "otro",
     "item_ids": [
@@ -208,7 +208,7 @@
     "hits": 3,
     "active": true,
     "nearest_deadline": "2027-02-01",
-    "days_until": 84,
+    "days_until": 83,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
