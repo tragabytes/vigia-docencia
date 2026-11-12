@@ -6,7 +6,7 @@
     "hits": 27,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 15,
+    "days_until": 14,
     "urgent": false,
     "latest_phase": "otro",
     "item_ids": [
@@ -46,7 +46,7 @@
     "hits": 8,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 15,
+    "days_until": 14,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -117,7 +117,7 @@
     "hits": 30,
     "active": true,
     "nearest_deadline": "2026-11-16",
-    "days_until": 5,
+    "days_until": 4,
     "urgent": true,
     "latest_phase": "otro",
     "item_ids": [
@@ -208,7 +208,7 @@
     "hits": 3,
     "active": true,
     "nearest_deadline": "2027-02-01",
-    "days_until": 82,
+    "days_until": 81,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -271,13 +271,15 @@
     "id": "T-17",
     "name": "Ayto. Tres Cantos",
     "desc": "Tres Cantos — convocatorias de empleo público",
-    "hits": 0,
-    "active": false,
-    "nearest_deadline": null,
-    "days_until": null,
+    "hits": 1,
+    "active": true,
+    "nearest_deadline": "2026-12-26",
+    "days_until": 44,
     "urgent": false,
-    "latest_phase": null,
-    "item_ids": []
+    "latest_phase": "convocatoria",
+    "item_ids": [
+      "6a1f6c6c65f45268"
+    ]
   },
   {
     "id": "T-18",
