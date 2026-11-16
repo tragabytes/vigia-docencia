@@ -6,7 +6,7 @@
     "hits": 29,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 13,
+    "days_until": 10,
     "urgent": false,
     "latest_phase": "admitidos_provisional",
     "item_ids": [
@@ -48,7 +48,7 @@
     "hits": 8,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 13,
+    "days_until": 10,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -119,7 +119,7 @@
     "hits": 32,
     "active": true,
     "nearest_deadline": "2026-11-16",
-    "days_until": 3,
+    "days_until": 0,
     "urgent": true,
     "latest_phase": "admitidos_provisional",
     "item_ids": [
@@ -212,7 +212,7 @@
     "hits": 3,
     "active": true,
     "nearest_deadline": "2027-02-01",
-    "days_until": 80,
+    "days_until": 77,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -278,7 +278,7 @@
     "hits": 1,
     "active": true,
     "nearest_deadline": "2026-12-26",
-    "days_until": 43,
+    "days_until": 40,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
