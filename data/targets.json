@@ -3,10 +3,10 @@
     "id": "T-01",
     "name": "Consejería de Educación CM",
     "desc": "Comunidad de Madrid — Consejería de Educación, Ciencia y Universidades",
-    "hits": 30,
+    "hits": 31,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 9,
+    "days_until": 8,
     "urgent": false,
     "latest_phase": "admitidos_provisional",
     "item_ids": [
@@ -39,7 +39,8 @@
       "384154df698ee320",
       "23c5cd1c840236fe",
       "8eb76fe84f282763",
-      "452d5792265986af"
+      "452d5792265986af",
+      "03267ad94bd473a0"
     ]
   },
   {
@@ -49,7 +50,7 @@
     "hits": 8,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 9,
+    "days_until": 8,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -117,10 +118,10 @@
     "id": "T-07",
     "name": "EOI Madrid",
     "desc": "Escuelas Oficiales de Idiomas (Español para extranjeros, especialidad 006)",
-    "hits": 33,
+    "hits": 34,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 9,
+    "days_until": 8,
     "urgent": false,
     "latest_phase": "admitidos_provisional",
     "item_ids": [
@@ -156,7 +157,8 @@
       "384154df698ee320",
       "23c5cd1c840236fe",
       "8eb76fe84f282763",
-      "452d5792265986af"
+      "452d5792265986af",
+      "03267ad94bd473a0"
     ]
   },
   {
@@ -214,7 +216,7 @@
     "hits": 3,
     "active": true,
     "nearest_deadline": "2027-02-01",
-    "days_until": 76,
+    "days_until": 75,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -277,14 +279,15 @@
     "id": "T-17",
     "name": "Ayto. Tres Cantos",
     "desc": "Tres Cantos — convocatorias de empleo público",
-    "hits": 1,
+    "hits": 2,
     "active": true,
     "nearest_deadline": "2026-12-26",
-    "days_until": 39,
+    "days_until": 38,
     "urgent": false,
-    "latest_phase": "convocatoria",
+    "latest_phase": "otro",
     "item_ids": [
-      "6a1f6c6c65f45268"
+      "6a1f6c6c65f45268",
+      "9398ecdbed7b3262"
     ]
   },
   {
