@@ -5,8 +5,8 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
-    "total_hits": 64
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
+    "total_hits": 66
   },
   {
     "name": "boe",
@@ -14,8 +14,8 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
-    "total_hits": 323
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
+    "total_hits": 324
   },
   {
     "name": "cervantes",
@@ -23,7 +23,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
     "total_hits": 0
   },
   {
@@ -32,7 +32,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
     "total_hits": 3
   },
   {
@@ -41,8 +41,8 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
-    "total_hits": 16
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
+    "total_hits": 17
   },
   {
     "name": "profesoresdeele",
@@ -50,7 +50,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
     "total_hits": 7
   },
   {
@@ -59,7 +59,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
     "total_hits": 0
   },
   {
@@ -68,17 +68,17 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
     "total_hits": 1
   },
   {
     "name": "tes",
     "url": "https://www.tes.com/jobs/search?keywords=spanish%20teacher&sort=date",
-    "status": "ok",
+    "status": "error",
     "code": 200,
-    "detail": "",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
-    "total_hits": 128
+    "detail": "HTTP OK pero el selector no devolvió elementos (posible parser roto)",
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
+    "total_hits": 148
   },
   {
     "name": "todoele",
@@ -86,7 +86,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
     "total_hits": 120
   },
   {
@@ -95,7 +95,7 @@
     "status": "error",
     "code": 200,
     "detail": "HTTP OK pero el selector no devolvió elementos (posible parser roto) — listados vacíos: https://ceu.wd3.myworkdayjobs.com/wday/cxs/ceu/COL/jobs, https://internationalschools.wd3.myworkdayjobs.com/wday/cxs/internationalschools/ISPCareers/jobs",
-    "last_probe_at": "2026-11-18T16:50:59.300109+00:00",
+    "last_probe_at": "2026-11-19T17:00:42.050965+00:00",
     "total_hits": 1
   }
 ]
