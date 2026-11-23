@@ -3,12 +3,12 @@
     "id": "T-01",
     "name": "Consejería de Educación CM",
     "desc": "Comunidad de Madrid — Consejería de Educación, Ciencia y Universidades",
-    "hits": 33,
+    "hits": 34,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 6,
+    "days_until": 3,
     "urgent": true,
-    "latest_phase": "admitidos_provisional",
+    "latest_phase": "convocatoria",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
@@ -42,17 +42,18 @@
       "452d5792265986af",
       "03267ad94bd473a0",
       "df9c41f42007089a",
-      "2fa6b4acf605ff5c"
+      "2fa6b4acf605ff5c",
+      "1fe363a479ff33d2"
     ]
   },
   {
     "id": "T-02",
     "name": "Ministerio de Educación",
     "desc": "Ministerio de Educación, Formación Profesional y Deportes (MEFD)",
-    "hits": 8,
+    "hits": 9,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 6,
+    "days_until": 3,
     "urgent": true,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -63,7 +64,8 @@
       "7fdc17b50032c3db",
       "feabc1e0051e765b",
       "b4d887dff0016d9a",
-      "30ee1d04703529a6"
+      "30ee1d04703529a6",
+      "1fe363a479ff33d2"
     ]
   },
   {
@@ -120,12 +122,12 @@
     "id": "T-07",
     "name": "EOI Madrid",
     "desc": "Escuelas Oficiales de Idiomas (Español para extranjeros, especialidad 006)",
-    "hits": 36,
+    "hits": 37,
     "active": true,
     "nearest_deadline": "2026-11-26",
-    "days_until": 6,
+    "days_until": 3,
     "urgent": true,
-    "latest_phase": "admitidos_provisional",
+    "latest_phase": "convocatoria",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
@@ -162,7 +164,8 @@
       "452d5792265986af",
       "03267ad94bd473a0",
       "df9c41f42007089a",
-      "2fa6b4acf605ff5c"
+      "2fa6b4acf605ff5c",
+      "1fe363a479ff33d2"
     ]
   },
   {
@@ -217,16 +220,18 @@
     "id": "T-12",
     "name": "Inspired Education",
     "desc": "Inspired Education — Mirabal, Kensington, King's, San Patricio, Everest",
-    "hits": 3,
+    "hits": 5,
     "active": true,
     "nearest_deadline": "2027-02-01",
-    "days_until": 73,
+    "days_until": 70,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
       "339748dbe4244718",
       "e5dde3eb4590287e",
-      "527c069ae99354bb"
+      "527c069ae99354bb",
+      "e0bb978b0c08b80a",
+      "742329d937ffd6de"
     ]
   },
   {
@@ -286,7 +291,7 @@
     "hits": 2,
     "active": true,
     "nearest_deadline": "2026-12-26",
-    "days_until": 36,
+    "days_until": 33,
     "urgent": false,
     "latest_phase": "otro",
     "item_ids": [
