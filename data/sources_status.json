@@ -5,8 +5,8 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
-    "total_hits": 68
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
+    "total_hits": 69
   },
   {
     "name": "boe",
@@ -14,8 +14,8 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
-    "total_hits": 334
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
+    "total_hits": 337
   },
   {
     "name": "cervantes",
@@ -23,7 +23,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
     "total_hits": 0
   },
   {
@@ -32,7 +32,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
     "total_hits": 3
   },
   {
@@ -41,8 +41,8 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
-    "total_hits": 22
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
+    "total_hits": 23
   },
   {
     "name": "profesoresdeele",
@@ -50,7 +50,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
     "total_hits": 7
   },
   {
@@ -59,7 +59,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
     "total_hits": 2
   },
   {
@@ -68,7 +68,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
     "total_hits": 1
   },
   {
@@ -77,7 +77,7 @@
     "status": "error",
     "code": 200,
     "detail": "HTTP OK pero el selector no devolvió elementos (posible parser roto)",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
     "total_hits": 148
   },
   {
@@ -86,7 +86,7 @@
     "status": "ok",
     "code": 200,
     "detail": "",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
     "total_hits": 138
   },
   {
@@ -95,7 +95,7 @@
     "status": "error",
     "code": 200,
     "detail": "HTTP OK pero el selector no devolvió elementos (posible parser roto) — listados vacíos: https://ceu.wd3.myworkdayjobs.com/wday/cxs/ceu/COL/jobs, https://internationalschools.wd3.myworkdayjobs.com/wday/cxs/internationalschools/ISPCareers/jobs",
-    "last_probe_at": "2026-11-24T19:10:39.301541+00:00",
+    "last_probe_at": "2026-11-25T18:16:42.919226+00:00",
     "total_hits": 1
   }
 ]
