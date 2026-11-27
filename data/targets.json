@@ -3,12 +3,12 @@
     "id": "T-01",
     "name": "Consejería de Educación CM",
     "desc": "Comunidad de Madrid — Consejería de Educación, Ciencia y Universidades",
-    "hits": 41,
+    "hits": 45,
     "active": true,
-    "nearest_deadline": "2026-11-26",
-    "days_until": 0,
+    "nearest_deadline": "2026-12-01",
+    "days_until": 4,
     "urgent": true,
-    "latest_phase": "convocatoria",
+    "latest_phase": "admitidos_provisional",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
@@ -50,7 +50,11 @@
       "18dd7ecc8b62ec90",
       "441e43748ed46594",
       "2c1362858cc97bf1",
-      "c3eebd116081bd10"
+      "c3eebd116081bd10",
+      "30e8dd034c0255b5",
+      "8a11206dd33bce22",
+      "5d55513cbe2aa893",
+      "ca748da1b08af0c7"
     ]
   },
   {
@@ -59,9 +63,9 @@
     "desc": "Ministerio de Educación, Formación Profesional y Deportes (MEFD)",
     "hits": 11,
     "active": true,
-    "nearest_deadline": "2026-11-26",
-    "days_until": 0,
-    "urgent": true,
+    "nearest_deadline": null,
+    "days_until": null,
+    "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
       "2f41268b400189b1",
@@ -81,13 +85,15 @@
     "id": "T-03",
     "name": "Instituto Cervantes",
     "desc": "Sede Cervantes — convocatorias de profesorado y becas",
-    "hits": 0,
-    "active": false,
-    "nearest_deadline": null,
-    "days_until": null,
+    "hits": 1,
+    "active": true,
+    "nearest_deadline": "2026-12-31",
+    "days_until": 34,
     "urgent": false,
-    "latest_phase": null,
-    "item_ids": []
+    "latest_phase": "convocatoria",
+    "item_ids": [
+      "4f0c400ec14526e8"
+    ]
   },
   {
     "id": "T-04",
@@ -131,12 +137,12 @@
     "id": "T-07",
     "name": "EOI Madrid",
     "desc": "Escuelas Oficiales de Idiomas (Español para extranjeros, especialidad 006)",
-    "hits": 43,
+    "hits": 47,
     "active": true,
-    "nearest_deadline": "2026-11-26",
-    "days_until": 0,
+    "nearest_deadline": "2026-12-01",
+    "days_until": 4,
     "urgent": true,
-    "latest_phase": "convocatoria",
+    "latest_phase": "admitidos_provisional",
     "item_ids": [
       "e473d71ab78a71e4",
       "bd142fa527600138",
@@ -180,7 +186,11 @@
       "816525d3865028d5",
       "18dd7ecc8b62ec90",
       "2c1362858cc97bf1",
-      "c3eebd116081bd10"
+      "c3eebd116081bd10",
+      "30e8dd034c0255b5",
+      "8a11206dd33bce22",
+      "5d55513cbe2aa893",
+      "ca748da1b08af0c7"
     ]
   },
   {
@@ -235,10 +245,10 @@
     "id": "T-12",
     "name": "Inspired Education",
     "desc": "Inspired Education — Mirabal, Kensington, King's, San Patricio, Everest",
-    "hits": 5,
+    "hits": 6,
     "active": true,
-    "nearest_deadline": "2027-02-01",
-    "days_until": 67,
+    "nearest_deadline": "2026-12-15",
+    "days_until": 18,
     "urgent": false,
     "latest_phase": "convocatoria",
     "item_ids": [
@@ -246,7 +256,8 @@
       "e5dde3eb4590287e",
       "527c069ae99354bb",
       "e0bb978b0c08b80a",
-      "742329d937ffd6de"
+      "742329d937ffd6de",
+      "fcb6d1b721bec3a2"
     ]
   },
   {
@@ -306,7 +317,7 @@
     "hits": 2,
     "active": true,
     "nearest_deadline": "2026-12-26",
-    "days_until": 30,
+    "days_until": 29,
     "urgent": false,
     "latest_phase": "otro",
     "item_ids": [
